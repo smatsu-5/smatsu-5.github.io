@@ -1,6 +1,9 @@
 body, html {
     height: 100%;
   }
+body {
+    background-color:#FF0000;
+}
 
 .container {
     position: relative;
