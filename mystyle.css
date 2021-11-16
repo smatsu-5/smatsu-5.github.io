@@ -1,6 +1,10 @@
+body {
+    background-color: aquamarine;
+}
+
 .container {
     height: 100%;
-    background-color: aquamarine;
+    
   }
 
 
