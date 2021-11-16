@@ -30,7 +30,12 @@ body {
     font-weight: bold;
 }
 
-
+.square {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: lightcyan;
+}
 
 .circle {
   position: absolute;
@@ -38,6 +43,6 @@ body {
   left: 50%;
   height: 100px;
   width: 100px;
-  background-color: white;
+  background-color:powderblue;
   border-radius: 50%;
 }
