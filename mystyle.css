@@ -3,13 +3,11 @@ body, html {
   }
 body {
     background-image: "banner2.jpg";
-    background-color:#000000;
 }
 
 .container {
     position: relative;
     text-align: center;
-    color: black;
     height: 100%;
   }
 
