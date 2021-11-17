@@ -15,11 +15,26 @@ body {
     transform: translate(-50%, -50%);
   }
 
-  .topnav {
-    position: absolute;
-    top: 10%;
-    left: 70%;
-    transform: translate(-50%, -50%);
+  .tabs {
+    overflow: hidden;
+    border: 1px solid black;
+    background: green;
+  }
+
+  .tab button {
+    background-color: inherit;
+    float: left;
+    cursor: pointer; 
+    padding: 10px 16px;
+    transition: 0.3s;
+  }
+
+  .tab button:hover { 
+    background-color: blue;
+  }
+
+  .tab button.active {
+    background-color: blueviolet;
   }
 
 .name {
