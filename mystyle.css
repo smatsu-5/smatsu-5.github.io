@@ -49,6 +49,13 @@ body {
     background-color: blueviolet;
   }
 
+  .tabpage {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
 .name {
     position: absolute;
     top: 10%;
