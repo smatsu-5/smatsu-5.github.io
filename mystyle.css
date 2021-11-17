@@ -80,13 +80,9 @@ body {
 }
 
 .rect {
-  position: absolute;
-  top: 50%;
-  left: 70%;
   height: 50px;
   width: 50px;
   background-color: yellow;
-  display: inline-block;
 }
 
 #sidebar {
