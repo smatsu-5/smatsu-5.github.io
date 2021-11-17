@@ -75,6 +75,14 @@ body {
   display: inline-block;
 }
 
-.test {
-  display: none;
+.dot {
+  position: absolute;
+  top: 50%;
+  left: 500%;
+  height: 50px;
+  width: 50px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
 }
+
