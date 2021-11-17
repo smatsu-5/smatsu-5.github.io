@@ -3,9 +3,10 @@ function flyout() {
 }
 
 function bigImg() {
-    document.getElementById("test").style.display = "block";
+    document.getElementById("sidebar").style.display = "block";
+    document.getElementById("sidebar").style.width = "22em";
   }
   
   function normalImg() {
-    document.getElementById("test").style.display = "none";
+    document.getElementById("sidebar").style.display = "none";
   }

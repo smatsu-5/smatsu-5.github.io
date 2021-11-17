@@ -70,8 +70,8 @@ body {
 
 .dot {
   position: absolute;
-  top: 20%;
-  left: 50%;
+  top: 0%;
+  left: 90%;
   height: 50px;
   width: 50px;
   background-color: green;
@@ -79,3 +79,19 @@ body {
   display: inline-block;
 }
 
+.rect {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  height: 50px;
+  width: 50px;
+  background-color: yellow;
+  display: inline-block;
+}
+
+#sidebar {
+  position: absolute;
+  left: 790%;
+  top: 50%;
+  display: none;
+}
