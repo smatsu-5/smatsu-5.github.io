@@ -57,11 +57,11 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  height: 25px;
-  width: 25px;
+  height: 100px;
+  width: 100px;
   background-color: red;
   border-radius: 50%;
-  visibility:hidden;
+  display: none;
 }
 
 .dot {
