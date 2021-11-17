@@ -1,3 +1,3 @@
 function flyout() {
-    document.getElementById("navbar").style.width = "22em";
+    document.getElementsByClassName("test").style.display = "block";
 }
