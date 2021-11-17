@@ -3,9 +3,9 @@ function flyout() {
 }
 
 function bigImg() {
-    document.getElementById("navbar").style.display = "inline-block";
+    document.getElementsByClassName("circle").style.display = "inline-block";
   }
   
   function normalImg() {
-    document.getElementById("navbar").style.display = "none";
+    document.getElementsByClassName("circle").style.display = "none";
   }

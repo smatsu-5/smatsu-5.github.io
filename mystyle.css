@@ -29,18 +29,6 @@ body {
     transition: 0.3s;
   }
 
-  #homepage { 
-    display: block;
-  }
-
-  #aboutme {
-    display:none;
-  }
-
-  #projects {
-    display: none;
-  }
-
   .tab button:hover { 
     background-color: blue;
   }
