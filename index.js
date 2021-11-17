@@ -3,9 +3,9 @@ function flyout() {
 }
 
 function bigImg() {
-    document.getElementsByClassName("circle").style.visibility = "visible";
+    document.getElementById("test").style.display = "block";
   }
   
   function normalImg() {
-    document.getElementsByClassName("circle").style.visibility = "hidden";
+    document.getElementById("test").style.display = "none";
   }

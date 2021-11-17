@@ -53,6 +53,10 @@ body {
     font-size: 32px;
 }
 
+#test {
+  display: none;
+}
+
 .circle {
   position: absolute;
   left: 50%;
@@ -61,7 +65,6 @@ body {
   width: 100px;
   background-color: red;
   border-radius: 50%;
-  display: none;
 }
 
 .dot {
