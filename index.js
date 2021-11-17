@@ -3,7 +3,7 @@ function flyout() {
 }
 
 function bigImg(x) {
-    document.getElementById("circle").style.display = "block";
+    document.getElementById("circle").style.display = "inline-block";
   }
   
   function normalImg(x) {
