@@ -3,7 +3,7 @@ function flyout() {
 }
 
 function bigImg() {
-    document.getElementsByClassName("circle").style.display = "inline-block";
+    document.getElementsByClassName("circle").style.visibility = "visible";
   }
   
   function normalImg() {
