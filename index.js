@@ -7,5 +7,5 @@ function bigImg() {
   }
   
   function normalImg() {
-    document.getElementsByClassName("circle").style.display = "none";
+    document.getElementsByClassName("circle").style.visibility = "hidden";
   }
