@@ -1,3 +1,3 @@
-function openTab(event, tabName) {
-    
+function flyout() {
+    document.getElementById("navbar").style.width = "22em";
 }
