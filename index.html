@@ -2,6 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="mystyle.css">
+    <link rel=”stylesheet” href=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I” crossorigin=”anonymous”>
 </head>
 <body>
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
@@ -13,6 +14,21 @@
             <button class = "tab1" onclick = "openTab(event, 'projects')">Projects</button>
             <button class = "tab2" onclick = "openTab(event, 'aboutme')">About Me</button>
         </div>
+
+        <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
         
         <div id = "homepage" class ="tabpage">
             <div class = "name_container">
