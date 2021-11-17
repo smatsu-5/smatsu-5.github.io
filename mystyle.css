@@ -29,6 +29,14 @@ body {
     transition: 0.3s;
   }
 
+  #aboutme {
+    display:block;
+  }
+
+  #projects {
+    display: block;
+  }
+
   .tab button:hover { 
     background-color: blue;
   }
