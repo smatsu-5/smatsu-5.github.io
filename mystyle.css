@@ -91,3 +91,9 @@ body {
   top: 50%;
   display: none;
 }
+
+.mainLogo {
+  max-width: 100%;
+  height: auto;
+  width: 3.7em;
+}
