@@ -78,6 +78,10 @@ body {
   display: inline-block;
 }
 
+#menu-icon {
+  height: 100px;
+  width: 100px;
+}
 .rect {
   height: 50px;
   width: 50px;
