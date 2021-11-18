@@ -16,9 +16,70 @@
 
     <div id = "sidebar">
         <div class= "rect">
-            
+
         </div>
+
     </div>
+    <div id="side-nav" class="container-fluid flyout-menu" id="openbtn" class="openbtn" onmouseenter="openNav()" onmouseleave="closeNav()">
+        <div class="row">
+            <div class="col-" style="background-color: white">
+                <img class="mainLogo" id="logo" src="banner2.jpg"/>
+            </div>
+        </div>
+        <div id="glyph-icon-row" class="row hidden-xs">
+            <div class="col-">
+                <ul id="list-group-ul" class="list-group-ul">
+                {% flag "dashboard" %}
+                <li class="list-group-item"><i class="flyout-icon glyphicon glyphicon-home"></i>Home</a></li>
+                {% endflag %}
+
+                <div id = "sideNavManagerLinks">
+                    {% flag "calendar" %}
+                        <li class="list-group-item"><a href="{% url 'schedule' store %}"><i class="flyout-icon glyphicon glyphicon-calendar"></i>Calendar</a></li>
+                    {% endflag %}
+                    {% flag "collaboration" %}
+                        <li class="list-group-item"><a href="{% url 'default_collaborations_with_store' store %}"><i class="flyout-icon glyphicon glyphicon-envelope"></i>Collaboration</a></li>
+                    {% endflag %}
+                    {% flag "employee_profile_manager" %}
+                       <li class="list-group-item"><a href="{% url 'employee_profile_manager' store %}"><i class="flyout-icon glyphicon glyphicon-briefcase"></i>Employee Profile Manager</a></li>
+                    {% endflag %}
+                    {% flag "human_resources" %}
+                        <li class="list-group-item"><a href="{% url 'human_resources_home' store %}"><i class="flyout-icon glyphicon glyphicon-user"></i>Human Resources</a></li>
+                    {% endflag %}
+                    {% flag "interceptor" %}
+                        <li class="list-group-item"><a href="{% url 'interceptor_messages' store %}"><i class="flyout-icon glyphicon glyphicon-thumbs-up"></i>Interceptor</a></li>
+                    {% endflag %}
+                    {% flag "surveys" %}
+                        <li class="list-group-item"><a href="{% url 'survey_portal_view_surveys' store %}"><i class="flyout-icon glyphicon glyphicon-stats"></i>Market Research</a></li>
+                    {% endflag %}
+                    {% flag "schedule_maker" %}
+                        <li class="list-group-item"><a href="{% url 'schedule_maker' store %}"><i class="flyout-icon glyphicon glyphicon-pencil"></i>Schedule Maker</a></li>
+                    {% endflag %}
+                    <div id = "bottomLinks">
+                        {% flag "all_settings" %}
+                            <li class="list-group-item"><a href="{% url 'all_settings_home' store %}"><i class="flyout-icon glyphicon glyphicon-cog"></i>All Settings</a></li>
+                        {% endflag %}
+                        <li class="list-group-item" id = "logOutLink"><a class="navbar-link" href="{% url 'logout'%}"><i class ="flyout-icon glyphicon glyphicon-log-out"></i>Logout</a></li>
+                    </div>
+                </div>
+                <div id = "sideNavEmployeeLinks" style = "display: none">
+                    {% flag "employee_profile_manager" %}
+                        <li class="list-group-item"><a href="{% url 'employee_profile_manager' store %}"><i class="flyout-icon glyphicon glyphicon-briefcase"></i>Address Book</a></li>
+                    {% endflag %}
+                    {% flag "calendar" %}
+                        <li class="list-group-item"><a href="{% url 'schedule' store %}"><i class="flyout-icon glyphicon glyphicon-calendar"></i>Calendar</a></li>
+                    {% endflag %}
+                    {% flag "collaboration" %}
+                        <li class="list-group-item"><a href="{% url 'default_collaborations_with_store' store %}"><i class="flyout-icon glyphicon glyphicon-envelope"></i>Collaboration</a></li>
+                    {% endflag %}
+                    {% flag "human_resources" %}
+                        <li class="list-group-item"><a href="{% url 'human_resources_home' store %}"><i class="flyout-icon glyphicon glyphicon-user"></i>Human Resources</a></li>
+                    {% endflag %}
+                    <div id = "bottomLinks">
+                        <li class="list-group-item" id = "logOutLink"><a class="navbar-link" href="{% url 'logout'%}"><i class ="flyout-icon glyphicon glyphicon-log-out"></i>Logout</a></li>
+                    </div>
+                </div>
+                </ul>
 
         <div class = "dot" onmouseenter="bigImg()" onmouseleave="normalImg()"></div>
         
