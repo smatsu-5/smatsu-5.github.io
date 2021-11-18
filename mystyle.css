@@ -68,14 +68,13 @@ body {
   border-radius: 50%;
 }
 
-.dot {
+#menu-button {
   position: absolute;
   top: 0%;
   left: 90%;
   height: 50px;
   width: 50px;
-  background-color: green;
-  border-radius: 50%;
+  border: 5px solid red;
   display: inline-block;
 }
 
