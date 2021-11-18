@@ -68,7 +68,7 @@ body {
   border-radius: 50%;
 }
 
-#menu-button {
+.menu-button {
   position: absolute;
   top: 0%;
   left: 90%;
