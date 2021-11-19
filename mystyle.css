@@ -103,3 +103,7 @@ body {
 #openbtn-span{
   left: 1.3em;
 }
+
+#openbtn{
+  display: block;
+}
