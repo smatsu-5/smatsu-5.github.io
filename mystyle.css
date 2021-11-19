@@ -83,8 +83,9 @@ body {
   margin: auto;
 }
 #menu-icon {
-  height: 100px;
+  height: 200px;
   width: 100px;
+  margin: auto;
 }
 .rect {
   height: 50px;
