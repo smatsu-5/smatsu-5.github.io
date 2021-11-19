@@ -99,3 +99,7 @@ body {
   top: 50%;
   display: none;
 }
+
+#openbtn-span{
+  left: 1.3em;
+}
