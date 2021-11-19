@@ -82,8 +82,9 @@ body {
   font-size: 30px;
 }
 #menu-icon {
-  height: 200px;
-  width: 100px;
+  position: inherit;
+  height: 50px;
+  width: 50px;
   margin: auto;
 }
 .rect {
