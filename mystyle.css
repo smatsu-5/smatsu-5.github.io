@@ -80,7 +80,7 @@ body {
 
 .glyphicon.glyphicon-align-justify {
   font-size: 40px;
-  justify-self: center;
+  margin: auto;
 }
 #menu-icon {
   height: 100px;
