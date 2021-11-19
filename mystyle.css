@@ -79,7 +79,8 @@ body {
 }
 
 .glyphicon.glyphicon-align-justify {
-  font-size: 100px;
+  font-size: 40px;
+  justify-self: center;
 }
 #menu-icon {
   height: 100px;
