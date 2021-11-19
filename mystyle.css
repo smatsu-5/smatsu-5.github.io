@@ -140,3 +140,46 @@ body {
 #allSettingLink {
   bottom: 0px;
 }
+
+.flyout-menu {
+  height: 100%;
+  width: 3.7em;
+  max-width: 100%;
+  position: fixed;
+  /* Higher than navbar */
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  background-color: #25a0d9;
+  transition: 0.1s;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.flyout-menu a {
+  text-decoration: none;
+  font-size: 1em;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.flyout-menu .list-group-item {
+  color: white;
+  background-color: #25a0d9;
+  border-style: none;
+  right: 2em;
+}
+
+.flyout-menu a:hover {
+  color: #f1f1f1;
+}
+
+#glyph-icon-row {
+  padding-top: 1em;
+}
+
+/* Remove some padding from list so that it displays closer to the side of the page */
+#glyph-icon-row ul {
+  padding-inline-start: 30px;
+}
