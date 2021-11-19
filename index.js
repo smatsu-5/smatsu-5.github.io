@@ -10,3 +10,22 @@ function bigImg() {
   function normalImg() {
     document.getElementById("sidebar").style.display = "none";
   }
+
+
+  function openNav() {
+    document.getElementById("side-nav").style.width = "22em";
+    document.getElementById("list-group-ul").style.display = "block";
+    document.getElementById("list-group-icon").style.display = "none";
+    /* Code to be executed if screen is mobile */
+    let isMobile = window.matchMedia("only screen and (max-width: 767px)").matches;
+    if(isMobile){
+    $('#mobile-apps-modal').modal('show');
+    }
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("side-nav").style.width = CLOSED_NAV_WIDTH;
+    document.getElementById("list-group-ul").style.display = "none";
+    document.getElementById("list-group-icon").style.display = "block";
+}
