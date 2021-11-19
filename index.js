@@ -1,3 +1,6 @@
+const CLOSED_NAV_WIDTH = "3.7em";
+
+
 function flyout() {
     document.getElementsByClassName("test").style.display = "block";
 }
