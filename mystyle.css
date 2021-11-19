@@ -107,3 +107,36 @@ body {
 #openbtn{
   display: block;
 }
+
+#closebtn-span{
+  left: 1.3em;
+}
+.flyout-menu .list-group-ul{
+  display: none;
+}
+
+.flyout-menu .flyout-icon {
+  padding-right: 2em;
+}
+
+#sideNavManagerLinks, #sideNavEmployeeLinks{
+  display: none;
+}
+
+#sideNavManagerIcons, #sideNavManagerIcons2, #sideNavEmployeeIcons{
+  display: none;
+}
+
+#bottomLinks {
+  position: absolute;
+  bottom: 0px;
+}
+
+#pop-up-dialog {
+  margin: 0px;
+  height: 95% !important;
+}
+
+#allSettingLink {
+  bottom: 0px;
+}
