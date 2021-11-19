@@ -78,6 +78,9 @@ body {
   display: inline-block;
 }
 
+.glyphicon.glyphicon-align-justify {
+  font-size: 30px;
+}
 #menu-icon {
   height: 200px;
   width: 100px;
