@@ -119,13 +119,6 @@ body {
   padding-right: 2em;
 }
 
-#sideNavManagerLinks, #sideNavEmployeeLinks{
-  display: none;
-}
-
-#sideNavManagerIcons, #sideNavManagerIcons2, #sideNavEmployeeIcons{
-  display: none;
-}
 
 #bottomLinks {
   position: absolute;
