@@ -18,7 +18,7 @@ function bigImg() {
   function openNav() {
     document.getElementById("list-group-ul").style.display = "block";
     document.getElementById("list-group-icon").style.display = "none";
-    document.getElementById("side-nav").style.width = "22em";
+    document.getElementById("side-nav").style.width = "10em";
 
     /* Code to be executed if screen is mobile */
     let isMobile = window.matchMedia("only screen and (max-width: 767px)").matches;
