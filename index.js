@@ -16,10 +16,12 @@ function bigImg() {
 
 
   function openNav() {
-    document.getElementById("list-group-icon").style.display = "none";
-    document.getElementById("list-group-ul").style.display = "block";
-    
     document.getElementById("side-nav").style.width = "10em";
+    document.getElementById("list-group-icon").style.display = "none";
+    setTimeout(function(){ document.getElementById("list-group-ul").style.display = "block"; }, 3000);
+    
+    
+    
 
     /* Code to be executed if screen is mobile */
     let isMobile = window.matchMedia("only screen and (max-width: 767px)").matches;
