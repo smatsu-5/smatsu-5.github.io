@@ -18,7 +18,7 @@ function bigImg() {
   function openNav() {
     document.getElementById("side-nav").style.width = "10em";
     document.getElementById("list-group-icon").style.display = "none";
-    setTimeout(function(){ document.getElementById("list-group-ul").style.display = "block"; }, 300000000);
+    setTimeout(function(){ document.getElementById("list-group-ul").style.display = "block"; }, 30000);
     
     
     
