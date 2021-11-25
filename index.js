@@ -19,7 +19,7 @@ function bigImg() {
     document.getElementById("side-nav").style.width = "10em";
     
     setTimeout(function(){ document.getElementById("list-group-icon").style.display = "none";
-    document.getElementById("list-group-ul").style.display = "block"; }, 300);
+    document.getElementById("list-group-ul").style.display = "block"; }, 100);
     
     
     
