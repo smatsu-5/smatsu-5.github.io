@@ -119,21 +119,6 @@ body {
   padding-right: 2em;
 }
 
-
-#bottomLinks {
-  position: absolute;
-  bottom: 0px;
-}
-
-#pop-up-dialog {
-  margin: 0px;
-  height: 95% !important;
-}
-
-#allSettingLink {
-  bottom: 0px;
-}
-
 .flyout-menu {
   height: 100%;
   width: 3.7em;
@@ -142,7 +127,7 @@ body {
   /* Higher than navbar */
   z-index: 1031;
   top: 0;
-  left: 0;
+  left: 100;
   background-color: #25a0d9;
   transition: 0.1s;
   overflow: auto;
