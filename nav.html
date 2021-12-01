@@ -1,26 +1,33 @@
-    <div id="side-nav" class="container-fluid flyout-menu" id="openbtn" class="openbtn" onmouseenter="openNav()" onmouseleave="closeNav()">
-        <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="https://smatsu-5.github.io/">S</a>
-          </nav>
-        <div id="glyph-icon-row" class="row hidden-xs">
-            <div class="col-">
-                <ul id="list-group-ul" class="list-group-ul">
-                    <li class="list-group-item"><a href="{% url 'dashboard' store %}"><i class="flyout-icon glyphicon glyphicon-home"></i>Home</a></li>
+<div class="links">
+    <a href="#"><i class="fa fa-fw fa-search"></i> LinkedIn</a>
+    <a href="#"><i class="fa fa-fw fa-envelope"></i> Email Me</a>
+    <a href="#"><i class="fa fa-fw fa-user"></i> GitHub</a>
+  </div>
 
-                    <div id = "sideNavManagerLinks">
-                        <li class="list-group-item"><a href="{% url 'schedule' store %}"><i class="flyout-icon glyphicon glyphicon-calendar"></i>Projects</a></li>
-                        <li class="list-group-item"><a href="https://smatsu-5.github.io/about"><i class="flyout-icon glyphicon glyphicon-envelope"></i>About Me</a></li>
-                    </div>
-                </ul>
-                <ul id="list-group-icon" class="list-group-icon">
-                        <li class="list-group-item"><a href="{% url 'dashboard' store %}"><i class="flyout-icon glyphicon glyphicon-home"></i></a></li>                    
 
-                    <div id="sideNavManagerIcons">
-                            <li class="list-group-item"><a href="{% url 'schedule' store %}"><i class="flyout-icon glyphicon glyphicon-calendar"></i></a></li>
-                            <li class="list-group-item"><a href="https://smatsu-5.github.io/about"><i class="flyout-icon glyphicon glyphicon-envelope"></i></a></li>
+<div id="side-nav" class="container-fluid flyout-menu" id="openbtn" class="openbtn" onmouseenter="openNav()" onmouseleave="closeNav()">
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="https://smatsu-5.github.io/">S</a>
+        </nav>
+    <div id="glyph-icon-row" class="row hidden-xs">
+        <div class="col-">
+            <ul id="list-group-ul" class="list-group-ul">
+                <li class="list-group-item"><a href="{% url 'dashboard' store %}"><i class="flyout-icon glyphicon glyphicon-home"></i>Home</a></li>
 
-                    </div>
-                </ul>
-            </div>
+                <div id = "sideNavManagerLinks">
+                    <li class="list-group-item"><a href="{% url 'schedule' store %}"><i class="flyout-icon glyphicon glyphicon-calendar"></i>Projects</a></li>
+                    <li class="list-group-item"><a href="https://smatsu-5.github.io/about"><i class="flyout-icon glyphicon glyphicon-envelope"></i>About Me</a></li>
+                </div>
+            </ul>
+            <ul id="list-group-icon" class="list-group-icon">
+                    <li class="list-group-item"><a href="{% url 'dashboard' store %}"><i class="flyout-icon glyphicon glyphicon-home"></i></a></li>                    
+
+                <div id="sideNavManagerIcons">
+                        <li class="list-group-item"><a href="{% url 'schedule' store %}"><i class="flyout-icon glyphicon glyphicon-calendar"></i></a></li>
+                        <li class="list-group-item"><a href="https://smatsu-5.github.io/about"><i class="flyout-icon glyphicon glyphicon-envelope"></i></a></li>
+
+                </div>
+            </ul>
         </div>
     </div>
+</div>
