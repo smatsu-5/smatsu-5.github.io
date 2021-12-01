@@ -171,6 +171,10 @@ body {
   float: right;
 }
 
+.links-right {
+  float: right;
+}
+
 /* Navbar links */
 .links a {
   float: left;
