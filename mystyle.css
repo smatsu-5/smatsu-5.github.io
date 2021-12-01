@@ -172,7 +172,7 @@ body {
 
 /* Navbar links */
 .links a {
-  float: left;
+  float: right;
   text-align: center;
   padding: 12px;
   color: white;
