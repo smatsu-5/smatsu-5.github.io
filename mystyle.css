@@ -121,7 +121,6 @@ body {
 
 .flyout-menu {
   height: 100%;
-  width: 3.7em;
   max-width: 100%;
   position: fixed;
   /* Higher than navbar */
