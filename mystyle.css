@@ -105,7 +105,7 @@ body {
 }
 
 #openbtn{
-  display: block;
+  display: none;
 }
 
 #closebtn-span{
