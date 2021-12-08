@@ -1,7 +1,7 @@
 const CLOSED_NAV_WIDTH = "3.7em";
 
 function openNav() {
-    document.getElementById("side-nav").style.width = "10em";
+    document.getElementById("side-nav").style.display = "block";
     
     setTimeout(function(){ document.getElementById("list-group-icon").style.display = "none";
     document.getElementById("list-group-ul").style.display = "block"; }, 100);
@@ -10,7 +10,7 @@ function openNav() {
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
-    document.getElementById("side-nav").style.width = CLOSED_NAV_WIDTH;
+    document.getElementById("side-nav").style.display = "none";
     document.getElementById("list-group-ul").style.display = "none";
     document.getElementById("list-group-icon").style.display = "block";
 }
