@@ -4,7 +4,7 @@ function openNav() {
     document.getElementById("side-nav").style.display = "block";
     
     setTimeout(function(){ document.getElementById("list-group-icon").style.display = "none";
-    document.getElementById("list-group-ul").style.display = "block"; }, 100);
+    document.getElementById("list-group-ul").style.display = "block"; }, 1000);
     
 }
 
