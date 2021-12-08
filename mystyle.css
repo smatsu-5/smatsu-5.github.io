@@ -152,6 +152,10 @@ body {
   padding-top: 1em;
 }
 
+#side-nav {
+  display: none;
+}
+
 /* Remove some padding from list so that it displays closer to the side of the page */
 #glyph-icon-row ul {
   padding-inline-start: 30px;
