@@ -1,41 +1,210 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sana Matsumoto</title>
-    <link rel="stylesheet" href="mystyle.css">
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <title>Sana Matsumoto</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">  
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
-
-    <script>
-        $(document).ready(function(){
-           $('#navbar').load("nav.html");
-        });
-    </script>
 </head>
+<script type="module" src="index.js"></script>  
 <body>
-    <script src="index.js"></script>
+  <div class="col-sm-2">
+    <div id="sidenav">
+      <div id="personal">
+        <a href="index.html" class="navlink"><img id = "icon" src="icon.jpg" alt="Avatar"> </a>
+      </div>
+      <ul id = "nav">
+        <li><a href="#about" id="aboutLink" class="navlink current"><span class="glyphicon glyphicon-user"></span> About</a></li>
+        <li><a href="#skills" id="skillsLink" class="navlink"><span class="glyphicon glyphicon-file"></span>  Skills </a></li>
+        <li><a href="#projects" id="projectsLink" class="navlink"><span class="glyphicon glyphicon-file"></span>  Projects </a></li>
+         <li><a href="#interests" id="interestsLink" class="navlink"><span class="glyphicon glyphicon-file"></span>  Interests </a></li>
 
-    <div id = "navbar"></div>
-    
-    <div class = "main">
-        <div class = "name_container">
-            <div class ="typewriter">
-                <h1 class = "name">Sana Matsumoto</h1>
-                <h3 class = "welcome"> Welcome to my page!</h3>
-            </div>
-            
-            
-        </div>   
+      </ul>
+
     </div>
+  </div>
 
+
+  <div class = "mobile-container">
+    <div id="mobilenav">
+      <div id="personal">
+        <a href="index.html" class="navlink current"><img id = "icon" src="icon.jpg" alt="Avatar"> </a>
+      </div>
+      <div id="myLinks">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#interests">Interests</a>
+      </div>
+      <div id="toggleicon" class="icon">
+        <i class="fa fa-bars"></i>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <div id="main">
+
+   
+    <section id="about" class ="sections">
+      <div id="nameLinks">
+        <h1 id="name">Sana Matsumoto</h1>
+      
+        <ul id="iconLinks">
+          <li  id = "linkedinIcon">
+            <a href="https://www.linkedin.com/in/sanamatsumoto/">
+              <i class="fa fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li  id="githubIcon">
+            <a href = "https://github.com/smatsu-5">
+              <i class="fa fa-brands fa-github" ></i>
+            </a>
+          </li>
+          <li  id="emailIcon">
+            <a href = "mailto: sana.matsumoto@gmail.com">
+              <i class="fa fa-regular fa-envelope" ></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+        <p>
+          Hello! My name is Sana. I graduated from the Ohio State University 
+          and received a BS in Computer Science and Engineering specializing 
+          in software engineering.
+          <br><br>
+          I am currently seeking a full time software engineer position. I am very 
+          interested in frontend work and love to cre
+        </p>
+        <br><br>
+
+    </section>
+    <hr>
+    <br><br>
+    <section id="skills" class ="sections"> 
+      <div>
+        <p class="header">Skills</p>
+        <br>
+        <ul class="fa-ul">
+          <li class="icons"> 
+            <i class="fa-brands fa-java"></i>
+          </li>
+          <li class="icons">
+            <i class="fa-brands fa-python"></i>
+          </li>
+          <li class="icons">
+            <i class="fa-brands fa-css3"></i>
+          </li>
+          <li class="icons">
+            <i class="fa-brands fa-html5"></i>
+          </li>
+          <li class="icons">
+            <i class="fa-brands fa-js"></i>
+          </li>
+          <li class="icons">
+            <i class="fa-brands fa-bootstrap"></i>
+          </li>
+          
+          <li class="icons">
+            <i class="fa-brands fa-github"></i>
+          </li>
+          <li class="icons">
+            <i class="fa-solid fa-file-word"></i>
+          </li>
+          <li class="icons">
+            <i class="fa-solid fa-file-excel"></i>   
+          </li>
+          <li class="icons">
+            <i class="fa-solid fa-file-powerpoint"></i>
+          </li>   
+        </ul>
+      
+      </div>
+    </section>
+    <hr>
+    <section id="projects" class="sections">
+      <p class="header">Projects</p>
+      <div id="vegetable">
+        <img src="vegetable.jpg" alt="">
+        <br>
+        <div id = "vegetable_text">
+          <p class="projectHeader">Vegetable Weight Progressive Web App</p>
+          <p>
+            The PWA was created to aid the produce department in weighting their products according to a target cost.
+            The app allows users to view a produce's price/lbs and weights for the target costs. The app is hosted
+            in Google Firebase and uses its build components to store data and images. 
+            <br>
+
+            Via a passcode, a manager can change the data for the produce and add new items to the database.
+
+
+          </p>
+          <p>Technologies used: Google Firebase, HTML, CSS, Javascript, Jquery, Bootstrap</p>    
+        </div>
+      </div>
+
+      <br><br><br>
+
+      <div id="sapphire">
+        <img src="sapphire.gif" alt="">
+        <br>
+        <div id = "sapphire_text">
+        <p class="projectHeader">Ruby Twitter Clone</p>
+        
+          <p>
+            Multiple projects throughout a semester focusing on medium-sized web applications and a larger end of semester project. 
+            Created a Twitter clone with Ruby, HTML, JavaScript and SCSS
+          </p>
+
+          <p>Technologies used: Ruby, HTML, SCSS, Javascript</p>    
+        </div>
+      </div>
+
+      <br><br><br>
+      <div id="capstone">
+        <img src="capstone.png" alt="">
+        <br>
+        <div id="capstone_text" >
+          <p class="projectHeader">Senior Capstone Project</p>
+          <p>Worked with Odin Oya for a semester-long project to clean up and add features to their Django web application.
+            The web portal has multiple applications for small businesses to facilitate day-to-day operations.
+            My tasks focused mostly on the frontend of the web application.
+            <br><br>
+            Implemented: <br>
+            o	An animation transition for mobile screens<br>
+            o	A click/drag feature for the schedule maker <br>
+            o	An auto archive feature to the messaging system <br>
+            o	A cleaner time-off request submission feature
+
+
+            </p>
+
+            <p>Technologies used: HTML, CSS, JS, Bootstrap, Python, Django</p>
+        </div>
+      </div>
+      <br><br>
+      <hr>
+    </section>
+
+<br><br>
+
+  <section id="interests" class="sections">
+      <h1 class="header">Interests</h1>
+
+      <p>Coming soon!</p>
+
+    </section>
+
+  </div>
 </body>
 </html>

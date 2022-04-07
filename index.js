@@ -1,45 +1,63 @@
-const CLOSED_NAV_WIDTH = "3.7em";
+var currentScroll = $(window).scrollTop();
+
+var aboutPos = document.getElementById("about").offsetTop;
+var skillsPos = document.getElementById("skills").offsetTop;
+var projectsPos = document.getElementById("projects").offsetTop;
+var interestsPos = document.getElementById("interests").offsetTop;
+
+var skillsHeight = document.getElementById("skills").offsetHeight;
+var aboutHeight = document.getElementById("about").offsetHeight;
+var projectsHeight = document.getElementById("projects").offsetHeight;
+var interestsHeight = document.getElementById("interests").offsetHeight;
+
+
+//window.scrollTo(0, 0);
+console.log(skillsPos);
+console.log(aboutHeight);
+$(document).ready(function() {
+    $(window).scroll(function (event) {
+        var scrollPos = $(document).scrollTop();
+        console.log(scrollPos);
+        
+        if (scrollPos >= aboutPos && scrollPos < (aboutPos + aboutHeight)-300)  {
+            $("#nav a").removeClass("current");
+            $("#aboutLink").addClass("current");
+        }
+        else if ((scrollPos > skillsPos-100) && scrollPos< (skillsPos + skillsHeight)-300)  {
+            $("#nav a").removeClass("current");
+            $("#skillsLink").addClass("current");
+        }
+        else if (scrollPos > projectsPos-200 && scrollPos< (projectsPos + projectsHeight)-300)  {
+            $("#nav a").removeClass("current");
+            $("#projectsLink").addClass("current");
+        }
+        else if (scrollPos> interestsPos-200 && scrollPos < (interestsPos + interestsHeight))  {
+            $("#nav a").removeClass("current");
+            $("#interestsLink").addClass("current");
+        }
+    });
+
+
+    
+    document.getElementById("toggleicon").addEventListener ("click", openNav, false);
 
 function openNav() {
-    document.getElementById("side-nav").style.display = "block";
-    
-    setTimeout(function(){ document.getElementById("list-group-icon").style.display = "none";
-    document.getElementById("list-group-ul").style.display = "block"; }, 1000);
-    
-}
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-    document.getElementById("side-nav").style.display = "none";
-    document.getElementById("list-group-ul").style.display = "none";
-    document.getElementById("list-group-icon").style.display = "block";
-}
-
-
-function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  /* Loop through a collection of all HTML elements: */
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("w3-include-html");
-    if (file) {
-      /* Make an HTTP request using the attribute value as the file name: */
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /* Remove the attribute, and call this function once more: */
-          elmnt.removeAttribute("w3-include-html");
-          includeHTML();
-        }
-      }
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /* Exit the function: */
-      return;
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
     }
   }
-}
+    
+
+});
+
+
+$("#nav a").click(function() {
+    $("#nav a").removeClass("current");
+    $(this).addClass("current");
+});
+
+
+

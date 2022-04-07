@@ -1,0 +1,369 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  background-color: white;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  
+}
+
+.mobile-container {
+  visibility: hidden;
+  height: 0px;
+}
+
+#main {
+  position: absolute;
+  left: 225px;
+  top: 0%;
+  width:auto;
+}
+
+#sidenav {
+    height: 100%;
+    width: 225px;
+    position: fixed;
+    z-index: 1;
+    left: -50%;
+    overflow-x: hidden;
+    padding-top: 20px;
+    justify-content: center;
+    background-color: #000000;
+    -webkit-animation: slide 10s forwards;
+    -webkit-animation-delay: 10s;
+    animation: slide 1s forwards;
+    animation-delay: .2s;
+  }
+
+@-webkit-keyframes slide {
+    100% { left: 0%; }
+}
+
+@keyframes slide {
+    100% { left: 0%; }
+}
+
+
+
+#icon {
+  height: 50%;
+  width: 50%;
+}
+  #personal {
+    text-align: center;
+  }
+
+  #nav {
+    padding: 20% 10% 10%;
+    text-align: center;
+  }
+  #nav a{
+    padding: 30px 8px 6px 10px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #ffffff;
+    display: block;
+    font-family: 'Montserrat', sans-serif;  
+  }
+
+
+
+  #nav .current {
+    color:#003A7B;
+  }
+
+
+#iconLinks {
+ padding-top: 5%;
+}
+
+
+/*My links*/
+#linkedinIcon, #emailIcon, #githubIcon {
+  display: inline-block;  
+  padding-inline: 5%;
+  font-size: 5vw;
+}
+
+
+.fa {
+  color: #d4cece;
+}
+
+.fa:hover, #nav a:hover{
+  color: #003A7B;
+}
+
+/*Skills icons*/
+
+.fa-ul:not(#iconLinks) {
+  font-size: 50px;
+}
+
+
+.icons {
+  display: inline;
+  padding: 1%;
+}
+
+ul#nav li { 
+  list-style: none;
+}
+
+#name {
+  font-size: 6vw;
+  font-family: fantasy;
+
+  letter-spacing: 3px;
+  -webkit-animation: slideR 10s forwards;
+  -webkit-animation-delay: 10s;
+  animation: slideR 1.5s forwards;
+  animation-delay: .2s;
+  white-space: nowrap;
+
+}
+
+#about {
+  padding-top: 5%;
+  height: 500px;
+}
+
+#about p {
+  font-size: 1.5vw;
+  padding-top: 5%;
+}
+
+
+
+
+.header {
+  font-family: 'Montserrat', sans-serif;
+  font-style: bold;
+  font-size: 2.6vw;
+  color: #0077b6;
+  padding-bottom: 3%;
+}
+
+#sapphire img {
+  width:45%;
+  box-shadow: 0 0 1000px rgba(0, 0, 0, 0.212);
+  border-radius: 40px;
+}
+
+#sapphire_text {
+  float: left;
+  width: 50%;
+  margin-right: 3%;
+}
+
+#capstone img {
+  width: 32%;
+  box-shadow: 0 0 10px rgba(6, 60, 235, 0.212);
+  border-radius: 40px;
+  margin-top: 5%;
+}
+
+
+#capstone_text {
+  float: right;
+  width: 60%;
+  margin-left: 5%;
+}
+
+#vegetable img {
+  width:25%;
+  box-shadow: 0 0 1000px rgba(0, 0, 0, 0.212);
+  border-radius: 20px;
+}
+
+#vegetable_text {
+  float: right;
+  width: 65%;
+  padding-top: 5%;
+}
+
+
+#projects, #skills, #interests {
+  position: relative;
+  width: 100%;
+}
+.projectHeader {
+  font-size: 2vw;
+}
+
+
+
+
+#toggleicon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top:0;
+  padding:1%;
+}
+
+.fa-bars {
+  font-size: 40px;
+}
+
+
+
+
+#logomobile {
+  color: white;
+  font-size: 30px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.sections {
+  font-size: 60px;
+  padding: 0% 5% 0%;
+  line-height: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+  #sidenav {
+    visibility: hidden;
+  }
+
+  .mobile-container{
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+    height: auto;
+    color: white;
+    visibility: visible;
+    position: fixed;
+
+  }
+  
+  #mobilenav {
+    position: relative;
+    background-color: black;
+    color:white;
+  }
+  
+  #mobilenav #myLinks {
+    display: none;
+  }
+
+  #icon, #personal {
+    width: 50px;
+  }
+
+  .sections {
+    font-size: 60px;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  #about {
+    padding-right: 5%;
+    top:35%;
+  }
+
+  #about p {
+    font-size: 20px;
+    padding-top: 5%;
+  }
+
+ #iconLinks {
+   font-size: 40px;
+   text-align: center;
+ }
+  .header {
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 5%;
+    font-style: bold;
+    font-size: 30px;
+  }
+
+  #name {
+    animation: none;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  #nameLinks {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  img:not(#icon) {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 20px;
+   width: 100%;
+  }
+
+  #vegetable img {
+    width:50%;
+  }
+
+  #vegetable_text, #capstone_text, #sapphire_text {
+    float: none;
+    font-size: 18px;
+    margin:5px;
+    width:100%;
+  }
+
+  .projectHeader {
+    font-size:24px;
+  }
+
+  /*Skill icons*/
+  .icons {
+    display: inline;
+    height: 10%;
+    font-size: 30px;
+    width: 100%;
+  }
+
+  .fa-ul {
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #main {
+    left: 0px;
+    width:100%;
+    top:5%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #linkedinIcon, #emailIcon, #githubIcon {
+    display: inline-block;  
+    padding-inline: 5%;
+    font-size: 10vw;
+  }
+  
+}
