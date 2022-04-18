@@ -3,46 +3,114 @@ html, body {
   height: 100%;
   background-color: white;
   scroll-behavior: smooth;
-  overflow-x: hidden;
-  
-}
 
-.mobile-container {
-  visibility: hidden;
-  height: 0px;
 }
 
 #main {
-  position: absolute;
-  left: 225px;
   top: 0%;
   width:auto;
 }
 
 #sidenav {
-    height: 100%;
-    width: 225px;
-    position: fixed;
-    z-index: 1;
-    left: -50%;
-    overflow-x: hidden;
-    padding-top: 20px;
-    justify-content: center;
-    background-color: #000000;
-    -webkit-animation: slide 10s forwards;
-    -webkit-animation-delay: 10s;
-    animation: slide 1s forwards;
-    animation-delay: .2s;
+  display: none;
+  height: 70%;
+  width: 100px;
+  top:0;
+  bottom: 0;
+  left: 0px;
+  margin: auto;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  justify-content: center;
+
   }
 
-@-webkit-keyframes slide {
-    100% { left: 0%; }
-}
+  #header-text {
+    position:absolute;
+    top: 0; bottom: 35px; left: 0; right: 0;
+    margin: auto;
+    height: 300px; /*requires explicit height*/
+  }
 
-@keyframes slide {
-    100% { left: 0%; }
-}
+  #header-text h1{
+    font: 76px/1.1em 'opensans-bold', sans-serif;
+    font-weight: 800;
+    margin: 0 auto 24px auto;
+  }
 
+  #header-text p{
+    font: 26px/1.1em 'opensans-bold', sans-serif;
+    text-align: center;
+
+  
+  }
+
+  .mobile-container {
+    visibility: hidden;
+    height: 0px;
+  }
+  
+  footer {
+    position:relative;
+    background-color: black;
+    height: 40px;
+    color: white;
+    width:100%;
+  }
+  
+  header {
+    position: relative;
+    width:100%;
+    overflow: hidden;
+    text-align: center;
+    background-image: url("bkg.jpg");
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+
+  #copyright {
+
+    width: 100%;
+    padding-top: 1%;
+    opacity: 30%;
+    text-align: center;
+    font-size: 1vw;
+  }
+
+  #topnav {
+    text-align: center;
+    width: 100%;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    margin:auto;
+  }
+  .topnavlink {
+    position: relative;
+    display: inline-block;
+    padding: 8px 30px;
+    font-size: 16px;
+    color: white;
+
+  }
+
+  #photoGallery {
+    width:80%;
+    float: left;
+  }
+
+
+  #thumbnails {
+    width: 15%; 
+    float:right;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
 
 
 #icon {
@@ -54,93 +122,100 @@ html, body {
   }
 
   #nav {
-    padding: 20% 10% 10%;
-    text-align: center;
+    height:70%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
   }
   #nav a{
-    padding: 30px 8px 6px 10px;
     text-decoration: none;
-    font-size: 24px;
-    color: #ffffff;
+    font-size: 30px;
+    color: black;
     display: block;
     font-family: 'Montserrat', sans-serif;  
+    width: fit-content;
   }
-
 
 
   #nav .current {
-    color:#003A7B;
+    color: #0077b6;
   }
 
 
 #iconLinks {
- padding-top: 5%;
+ padding-top: 2%;
+ display: inline-flex;
+ justify-content: center;
+}
+
+#languages {
+  float: left;
+  width:50%;
+}
+
+#technologies {
+  float: right;
+  width:50%;
+}
+
+#technologies h2,#languages h2{
+  font-size: 25px;
+  color:#d17803;
 }
 
 
 /*My links*/
 #linkedinIcon, #emailIcon, #githubIcon {
-  display: inline-block;  
-  padding-inline: 5%;
-  font-size: 5vw;
+  display: inline;  
+  padding-inline: 20%;
+  font-size: 40px;
 }
 
 
 .fa {
-  color: #d4cece;
+  color: black;
 }
 
 .fa:hover, #nav a:hover{
-  color: #003A7B;
+  color: #d4cece;
 }
 
 /*Skills icons*/
 
-.fa-ul:not(#iconLinks) {
-  font-size: 50px;
-}
-
 
 .icons {
-  display: inline;
-  padding: 1%;
+  font-size: 20px;
+  padding: 3%;
 }
 
-ul#nav li { 
-  list-style: none;
+p{
+  text-align: left;
+
 }
 
 #name {
   font-size: 6vw;
   font-family: fantasy;
-
   letter-spacing: 3px;
-  -webkit-animation: slideR 10s forwards;
-  -webkit-animation-delay: 10s;
-  animation: slideR 1.5s forwards;
-  animation-delay: .2s;
   white-space: nowrap;
 
 }
 
-#about {
-  padding-top: 5%;
-  height: 500px;
-}
 
-#about p {
-  font-size: 1.5vw;
-  padding-top: 5%;
-}
-
-
-
-
-.header {
+.sectionHeader {
   font-family: 'Montserrat', sans-serif;
   font-style: bold;
-  font-size: 2.6vw;
+  font-size: 3vw;
   color: #0077b6;
+
   padding-bottom: 3%;
 }
 
@@ -157,7 +232,7 @@ ul#nav li {
 }
 
 #capstone img {
-  width: 32%;
+  width: 30%;
   box-shadow: 0 0 10px rgba(6, 60, 235, 0.212);
   border-radius: 40px;
   margin-top: 5%;
@@ -166,8 +241,7 @@ ul#nav li {
 
 #capstone_text {
   float: right;
-  width: 60%;
-  margin-left: 5%;
+  width: 65%;
 }
 
 #vegetable img {
@@ -183,23 +257,28 @@ ul#nav li {
 }
 
 
-#projects, #skills, #interests {
+#about, #projects, #skills, #interests {
   position: relative;
   width: 100%;
 }
+
+
 .projectHeader {
   font-size: 2vw;
+  text-align: center;
+  color:#d17803;
+
 }
 
 
 
 
 #toggleicon {
-  display: block;
+  display: inline-block;
   position: absolute;
-  right: 0;
-  top:0;
-  padding:1%;
+  right: 10px;
+  top:12px;
+vertical-align: middle;
 }
 
 .fa-bars {
@@ -220,23 +299,41 @@ p {
 
 .sections {
   font-size: 60px;
-  padding: 0% 5% 0%;
+  padding: 10% 5% 10%;
   line-height: 30px;
   font-family: 'Montserrat', sans-serif;
+  position: relative;
+  width: 100%;
+}
+
+.rectangle {
+  height: 50px;
+  width: auto;
+  background-color: #003A7B;
+}
+
+
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+
+#thumbnailCont {
+  display: block;
+}
+
+
+
+.iconGroup {
+  list-style: none;
+  text-align: center;
 }
 
 
 
 
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 992px) {
   #sidenav {
     visibility: hidden;
   }
@@ -252,33 +349,53 @@ p {
     position: fixed;
 
   }
-  
+
   #mobilenav {
     position: relative;
     background-color: black;
     color:white;
+  }
+
+  #copyright {
+    opacity: 100%;
+    text-align: center;
+    font-size: 3vw;
+  }
+
+  #mobilenav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    text-align: right;
   }
   
   #mobilenav #myLinks {
     display: none;
   }
 
+  #linkContents{
+    display: flex;
+    justify-content: center;
+  }
+
   #icon, #personal {
-    width: 50px;
+    width: 40px;
   }
 
   .sections {
     font-size: 60px;
     line-height: 30px;
     font-family: 'Montserrat', sans-serif;
+    padding-bottom: 5%;
   }
 
   #about {
-    padding-right: 5%;
     top:35%;
   }
 
-  #about p {
+  #about p:not{
     font-size: 20px;
     padding-top: 5%;
   }
@@ -287,7 +404,7 @@ p {
    font-size: 40px;
    text-align: center;
  }
-  .header {
+  .sectionHeader {
     font-family: 'Montserrat', sans-serif;
     padding-bottom: 5%;
     font-style: bold;
@@ -295,7 +412,6 @@ p {
   }
 
   #name {
-    animation: none;
     font-size: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -314,12 +430,11 @@ p {
     padding: 0;
   }
 
-  img:not(#icon) {
+  .projectImg{
    display: block;
    margin-left: auto;
    margin-right: auto;
    border-radius: 20px;
-   width: 100%;
   }
 
   #vegetable img {
@@ -331,22 +446,32 @@ p {
     font-size: 18px;
     margin:5px;
     width:100%;
+    padding-top: 5%;
   }
 
+  #capstone img {
+    width: 60%;
+  }
+
+  #sapphire img{
+    width: 80%;
+  }
   .projectHeader {
     font-size:24px;
   }
 
   /*Skill icons*/
   .icons {
-    display: inline;
     height: 10%;
     font-size: 30px;
     width: 100%;
   }
 
-  .fa-ul {
-    margin: 0px;
+  ul .iconGroup{
+    list-style: none;
+  }
+  .iconGroup {
+    list-style: none;
     display: flex;
     justify-content: space-around;
   }
@@ -358,12 +483,42 @@ p {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 40%;
   }
 
   #linkedinIcon, #emailIcon, #githubIcon {
     display: inline-block;  
-    padding-inline: 5%;
-    font-size: 10vw;
+    padding-inline: 40%;
+    font-size: 32px;
+  }
+
+
+ 
+   #header-text h1{
+    font: 50px/1.1em 'opensans-bold', sans-serif;
+    font-weight: 800;
+    margin: 0 auto 18px auto;
+  }
+
+  
+  #header-text p{
+    font: 20px/1.1em 'opensans-bold', sans-serif;
+  
+  }
+
+  #header-text {
+    position:absolute;
+    top: 0; bottom: 15px; left: 0; right: 0;
+    margin: auto;
+    height: 250px; /*requires explicit height*/
   }
   
+
+  #thumbnailCont {
+    display: none;
+  }
+
+  #photoGallery {
+    width: auto;
+  }
 }
