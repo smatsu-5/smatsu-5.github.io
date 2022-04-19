@@ -26,6 +26,10 @@ html, body {
 
   }
 
+  #mobilenav {
+    visibility: hidden;
+  }
+
   #header-text {
     position:absolute;
     top: 0; bottom: 35px; left: 0; right: 0;
@@ -46,11 +50,6 @@ html, body {
   
   }
 
-  .mobile-container {
-    visibility: hidden;
-    height: 0px;
-  }
-  
   footer {
     position:relative;
     background-color: black;
@@ -100,7 +99,7 @@ html, body {
   }
 
   #photoGallery {
-    width:80%;
+    width:75%;
     float: left;
   }
 
@@ -121,7 +120,7 @@ html, body {
     text-align: center;
   }
 
-  #nav {
+  #sidenavLinks {
     height:70%;
     position: absolute;
     left: 0;
@@ -135,7 +134,7 @@ html, body {
     justify-content: space-between;
    
   }
-  #nav a{
+  #sidenavLinks a{
     text-decoration: none;
     font-size: 30px;
     color: black;
@@ -145,29 +144,29 @@ html, body {
   }
 
 
-  #nav .current {
+  #sidenavLinks .current {
     color: #0077b6;
   }
 
 
-#iconLinks {
+#myLinks {
  padding-top: 2%;
  display: inline-flex;
  justify-content: center;
 }
 
-#languages {
+#languagesGroup {
   float: left;
   width:50%;
 }
 
-#technologies {
+#techGroup {
   float: right;
   width:50%;
 }
 
-#technologies h2,#languages h2{
-  font-size: 25px;
+#techGroup h2,#languagesGroup h2{
+  font-size: 30px;
   color:#d17803;
 }
 
@@ -184,7 +183,7 @@ html, body {
   color: black;
 }
 
-.fa:hover, #nav a:hover{
+.fa:hover, #sidenavLinks a:hover{
   color: #d4cece;
 }
 
@@ -192,7 +191,7 @@ html, body {
 
 
 .icons {
-  font-size: 20px;
+  font-size: 24px;
   padding: 3%;
 }
 
@@ -215,11 +214,9 @@ p{
   font-style: bold;
   font-size: 3vw;
   color: #0077b6;
-
-  padding-bottom: 3%;
 }
 
-#sapphire img {
+#sapphireProject img {
   width:45%;
   box-shadow: 0 0 1000px rgba(0, 0, 0, 0.212);
   border-radius: 40px;
@@ -231,7 +228,7 @@ p{
   margin-right: 3%;
 }
 
-#capstone img {
+#capstoneProject img {
   width: 30%;
   box-shadow: 0 0 10px rgba(6, 60, 235, 0.212);
   border-radius: 40px;
@@ -244,7 +241,7 @@ p{
   width: 65%;
 }
 
-#vegetable img {
+#vegetableProject img {
   width:25%;
   box-shadow: 0 0 1000px rgba(0, 0, 0, 0.212);
   border-radius: 20px;
@@ -253,6 +250,18 @@ p{
 #vegetable_text {
   float: right;
   width: 65%;
+  padding-top: 5%;
+}
+
+#websiteProject img {
+  width:45%;
+  box-shadow: 0 0 1000px rgba(0, 0, 0, 0.212);
+  border-radius: 20px;
+}
+
+#website_text {
+  float: left;
+  width: 55%;
   padding-top: 5%;
 }
 
@@ -299,7 +308,7 @@ p {
 
 .sections {
   font-size: 60px;
-  padding: 10% 5% 10%;
+  padding: 5% 5% 5%;
   line-height: 30px;
   font-family: 'Montserrat', sans-serif;
   position: relative;
@@ -333,51 +342,44 @@ ol {
 
 
 
-@media only screen and (max-width: 992px) {
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
   #sidenav {
     visibility: hidden;
   }
 
-  .mobile-container{
-    z-index: 1;
-    width: 100%;
-    overflow: hidden;
-    margin: auto;
-    height: auto;
-    color: white;
+  #mobilenav {
     visibility: visible;
+    display: none;
     position: fixed;
-
+    top: 0px;
+    background-color: black;
+    width:100%;
+    z-index: 100;
   }
 
-  #mobilenav {
-    position: relative;
-    background-color: black;
-    color:white;
+  p {
+    text-align: center;
+  }
+
+  #mobilenavLinks{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #mobilenavLinks a{
+    color: white;
   }
 
   #copyright {
     opacity: 100%;
     text-align: center;
-    font-size: 3vw;
-  }
-
-  #mobilenav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-    text-align: right;
-  }
-  
-  #mobilenav #myLinks {
-    display: none;
-  }
-
-  #linkContents{
-    display: flex;
-    justify-content: center;
+    font-size: 10px;
   }
 
   #icon, #personal {
@@ -400,13 +402,13 @@ ol {
     padding-top: 5%;
   }
 
- #iconLinks {
+ #myLinks {
    font-size: 40px;
    text-align: center;
  }
   .sectionHeader {
     font-family: 'Montserrat', sans-serif;
-    padding-bottom: 5%;
+    padding-bottom: 0%;
     font-style: bold;
     font-size: 30px;
   }
@@ -437,11 +439,11 @@ ol {
    border-radius: 20px;
   }
 
-  #vegetable img {
+  #vegetableProject img {
     width:50%;
   }
 
-  #vegetable_text, #capstone_text, #sapphire_text {
+  #vegetable_text, #capstone_text, #sapphire_text, #website_text {
     float: none;
     font-size: 18px;
     margin:5px;
@@ -449,30 +451,31 @@ ol {
     padding-top: 5%;
   }
 
-  #capstone img {
+  #capstoneProject img {
     width: 60%;
   }
 
-  #sapphire img{
+  #sapphireProject img{
     width: 80%;
   }
+
+  #websiteProject img{
+    width:45%;
+  }
   .projectHeader {
-    font-size:24px;
+    font-size:20px;
   }
 
   /*Skill icons*/
   .icons {
     height: 10%;
-    font-size: 30px;
+    font-size: 18px;
     width: 100%;
   }
 
-  ul .iconGroup{
-    list-style: none;
-  }
+
   .iconGroup {
     list-style: none;
-    display: flex;
     justify-content: space-around;
   }
 
@@ -483,7 +486,7 @@ ol {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 40%;
+    margin-bottom: 20%;
   }
 
   #linkedinIcon, #emailIcon, #githubIcon {
@@ -521,4 +524,10 @@ ol {
   #photoGallery {
     width: auto;
   }
+
+  #techGroup h2,#languagesGroup h2{
+    font-size: 25px;
+    color:#d17803;
+  }
 }
+
