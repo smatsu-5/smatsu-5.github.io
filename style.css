@@ -218,6 +218,7 @@ p{
 
 #sapphireProject img {
   width:45%;
+  height: 50%;
   box-shadow: 0 0 1000px rgba(0, 0, 0, 0.212);
   border-radius: 40px;
 }
@@ -230,6 +231,7 @@ p{
 
 #capstoneProject img {
   width: 30%;
+  height: 30%;
   box-shadow: 0 0 10px rgba(6, 60, 235, 0.212);
   border-radius: 40px;
   margin-top: 5%;
@@ -243,6 +245,7 @@ p{
 
 #vegetableProject img {
   width:25%;
+  height: 40%;
   box-shadow: 0 0 1000px rgba(0, 0, 0, 0.212);
   border-radius: 20px;
 }
@@ -255,6 +258,7 @@ p{
 
 #websiteProject img {
   width:45%;
+  height: 45%;
   box-shadow: 0 0 1000px rgba(0, 0, 0, 0.212);
   border-radius: 20px;
 }
@@ -460,6 +464,7 @@ ol {
 
   #vegetableProject img {
     width:50%;
+    height: 50%;
   }
 
   #vegetable_text, #capstone_text, #sapphire_text, #website_text {
@@ -472,14 +477,17 @@ ol {
 
   #capstoneProject img {
     width: 60%;
+    height: 60%;
   }
 
   #sapphireProject img{
     width: 80%;
+    height: 80%;
   }
 
   #websiteProject img{
     width:80%;
+    height: 80%;
   }
   .projectHeader {
     font-size:20px;
