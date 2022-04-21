@@ -115,7 +115,7 @@ p{
 }
 
 #capstoneProject img {
-  width: 30%;
+  width: 25%;
   height: 30%;
   box-shadow: 0 0 10px rgba(6, 60, 235, 0.212);
   border-radius: 40px;
@@ -212,7 +212,7 @@ width: 50%;
 #sapphireProject img {
   width:45%;
   height: 50%;
-  box-shadow: 0 0 1000px rgba(0, 0, 0, 0.212);
+  box-shadow: 0 0 10px rgba(6, 60, 235, 0.212);
   border-radius: 40px;
 }
 
@@ -307,7 +307,7 @@ vertical-align: middle;
 #vegetableProject img {
   width:25%;
   height: 40%;
-  box-shadow: 0 0 1000px rgba(0, 0, 0, 0.212);
+  box-shadow: 0 0 10px rgba(6, 60, 235, 0.212);
   border-radius: 20px;
 }
 
@@ -320,8 +320,12 @@ vertical-align: middle;
 #websiteProject img {
   width:45%;
   height: 45%;
-  box-shadow: 0 0 1000px rgba(0, 0, 0, 0.212);
+  box-shadow: 0 0 10px rgba(6, 60, 235, 0.212);
   border-radius: 20px;
+}
+
+#websiteProject {
+  padding-top: 7%;
 }
 
 #website_text {
