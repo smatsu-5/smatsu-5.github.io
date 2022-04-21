@@ -39,7 +39,7 @@ $(document).ready(function() {
             $("#sidenavLinks a").removeClass("current");
             $("#projectsLink").addClass("current");
         }
-        else if ((scrollPos> interestsPos+200) && scrollPos < (interestsPos + interestsHeight))  {
+        else if ((scrollPos> interestsPos+300) && scrollPos < (interestsPos + interestsHeight))  {
             $("#sidenavLinks a").removeClass("current");
             $("#interestsLink").addClass("current");
         }
