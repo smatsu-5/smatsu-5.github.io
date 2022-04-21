@@ -107,8 +107,11 @@ html, body {
   #thumbnails {
     width: 15%; 
     float:right;
-    margin-top: 5%;
-    margin-bottom: 5%;
+
+  }
+
+  #galleryThumbnails {
+    padding: 0% 5%;
   }
 
 
@@ -340,11 +343,6 @@ ol {
 }
 
 
-#thumbnailCont {
-  display: block;
-}
-
-
 
 .iconGroup {
   list-style: none;
@@ -546,7 +544,7 @@ ol {
   }
   
 
-  #thumbnailCont {
+  #thumbnails {
     display: none;
   }
 
