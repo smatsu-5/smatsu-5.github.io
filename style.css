@@ -100,12 +100,8 @@ p{
 
 /*Id*/
 
-#about {
-  scroll-margin-top: 40px;
-}
-
 #skills, #projects, #interests {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 10px;
 }
 
 #about, #projects, #skills, #interests {
@@ -377,7 +373,6 @@ vertical-align: middle;
       line-height: 30px;
       font-family: 'Montserrat', sans-serif;
       padding-bottom: 5%;
-      scroll-margin-top: 20px;
   }
 
   .sectionHeader {
@@ -389,12 +384,18 @@ vertical-align: middle;
 
   #about {
       top:35%;
+      scroll-margin-top: 40px;
   }
 
   #about p:not{
       font-size: 20px;
       padding-top: 5%;
   }
+  
+  #skills, #projects, #interests {
+    scroll-margin-top: 80px;
+  }
+  
   
   #capstoneProject img {
       width: 60%;
