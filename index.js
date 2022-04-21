@@ -35,7 +35,7 @@ $(document).ready(function() {
             $("#sidenavLinks a").removeClass("current");
             $("#skillsLink").addClass("current");
         }
-        else if ((scrollPos > (projectsPos+300)) && scrollPos< (projectsPos + projectsHeight))  {
+        else if ((scrollPos > (projectsPos+300)) && scrollPos< (projectsPos + projectsHeight)+200)  {
             $("#sidenavLinks a").removeClass("current");
             $("#projectsLink").addClass("current");
         }
