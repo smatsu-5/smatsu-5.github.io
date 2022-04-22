@@ -272,9 +272,10 @@ width: 50%;
   width:50%;
 }
 
-#techGroup h2,#languagesGroup h2{
+#techGroup p,#languagesGroup p{
   font-size: 30px;
   color:#d17803;
+  text-align: center;
 }
 
 #toggleicon {
@@ -518,9 +519,10 @@ vertical-align: middle;
       visibility: hidden;
   }
 
-  #techGroup h2,#languagesGroup h2{
+  #techGroup p,#languagesGroup p{
       font-size: 25px;
       color:#d17803;
+      text-align: center;
   }
 
   #thumbnails {
