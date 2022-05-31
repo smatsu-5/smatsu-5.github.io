@@ -1,3 +1,101 @@
+#navbar {
+  visibility: visible;
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 594px;
+background: white;
+border-bottom: 2px solid black;
+}
+
+#navLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap:100px;
+  right: 100px;
+  position: absolute;
+  }
+
+  #logoImg {
+    width: 5%;
+  }
+
+  #myLinks {
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+    justify-content: space-evenly;
+    display: flex;
+  }
+  #nameRect {
+    box-sizing: border-box;
+    position: absolute;
+    width: 30%;
+    height: 28%;
+    left: 50%;
+    top: 15%;
+    background: #FFFFFF;
+    border: 5px solid #003A7B;
+    z-index: 3;
+    display: flex;
+  }
+  #intro {
+    margin: auto;
+    vertical-align: middle;
+  }
+  #desc {
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+    width: 90%;
+  }
+  #line {
+    position: absolute;
+width: inherit;
+height: 0px;
+left: 0px;
+top: 10%;
+
+border: 1px solid #000000;
+transform: rotate(0.16deg);
+  }
+  #descRect {
+    box-sizing: border-box;
+    position: absolute;
+    width: 45%;
+    height: 50%;
+    left: 10%;
+    top:30%;
+    background: #FFFFFF;
+    border: 5px solid #003A7B;
+    z-index: 2;
+    display: flex;
+  }
+  #linksRect {
+    box-sizing: border-box;
+    position: absolute;
+    width: 40%;
+    height: 24%;
+    left: 50%;
+    top: 65%;
+    z-index: 1;
+    background: #FFFFFF;
+    border: 5px solid #003A7B;
+    display: flex;
+  }
+
+  #navLinks a{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 46px;
+    /* identical to box height */
+    
+    
+  }
 html, body {
   margin: 0;
   height: 100%;
@@ -15,6 +113,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
   
 }
 
@@ -104,7 +203,7 @@ p{
   scroll-margin-top: 10px;
 }
 
-#about, #projects, #skills, #interests {
+#projects, #skills, #interests {
   position: relative;
   width: 100%;
 }
@@ -182,12 +281,6 @@ width: 50%;
 
 #mobilenav {
   visibility: hidden;
-}
-
-#myLinks {
- padding-top: 2%;
- display: inline-flex;
- justify-content: center;
 }
 
 
@@ -335,6 +428,9 @@ vertical-align: middle;
   padding-top: 5%;
 }
 
+#about {
+  display: none;
+}
 
 @media only screen and (max-width: 1000px) {
   p {
@@ -387,16 +483,7 @@ vertical-align: middle;
       font-size: 30px;
   }
 
-  #about {
-      top:35%;
-      scroll-margin-top: 40px;
-  }
 
-  #about p:not{
-      font-size: 20px;
-      padding-top: 5%;
-  }
-  
   #skills, #projects, #interests {
     scroll-margin-top: 80px;
   }
@@ -457,7 +544,6 @@ vertical-align: middle;
  
   #mobilenav {
       visibility: visible;
-      display: none;
       position: fixed;
       top: 0px;
       background-color: black;
@@ -485,12 +571,7 @@ vertical-align: middle;
       color: white;
   }
 
-  #myLinks {
-      font-size: 40px;
-      text-align: center;
-  }
-
-
+ 
   #name {
       font-size: 40px;
       margin-left: auto;
@@ -549,9 +630,14 @@ vertical-align: middle;
       height: 80%;
   }
 
+  #navbar {
+    visibility: hidden;
+  }
 
 
-
+  #myLinks {
+    display: inline;
+  }
 }
 
 

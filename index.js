@@ -21,17 +21,11 @@ $(document).ready(function() {
         var scrollPos = $(document).scrollTop();
         if (scrollPos <= (homePos + homeHeight)){
             $("#sidenav").fadeOut(500);
-            $("#mobilenav").fadeOut(500);
         }
         else if(scrollPos >= (homePos + homeHeight)){
             $("#sidenav").fadeIn(2500);
-            $("#mobilenav").fadeIn(2500);
         }
-        if ((scrollPos > aboutPos) && scrollPos< (aboutPos + aboutHeight)+200)  {
-            $("#sidenavLinks a").removeClass("current");
-            $("#aboutLink").addClass("current");
-        }
-        else if ((scrollPos > skillsPos+300) && scrollPos< (skillsPos + skillsHeight)+200)  {
+        if ((scrollPos > skillsPos+300) && scrollPos< (skillsPos + skillsHeight)+200)  {
             $("#sidenavLinks a").removeClass("current");
             $("#skillsLink").addClass("current");
         }
@@ -60,6 +54,9 @@ $(window).on('resize', function() {
 
      $('header').css({ 'height': $(window).height() });
 });
+
+
+
 
 /*Changes interval of thumbnail gallery according to the thumbnail selected*/
 $('#photoGallery').on('slid.bs.carousel', function () {
