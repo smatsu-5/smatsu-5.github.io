@@ -382,7 +382,7 @@ vertical-align: middle;
 .projectSections {
   display: flex;
   justify-content: space-between;
-
+  padding-bottom: 10%;
 }
 
 
@@ -402,27 +402,16 @@ vertical-align: middle;
 
 }
 
-#vegetableProject img {
+#vegetableProject img, #reviewProject img, #websiteProject img {
   width:100%;
   box-shadow: 0 0 10px rgba(6, 60, 235, 0.212);
   border-radius: 20px;
 }
 
-#vegetable_text, #capstone_text, #website_text, #sapphire_text {
+#vegetable_text, #capstone_text, #website_text, #sapphire_text, #review_text {
   width: 50%;
   float: right;
 }
-
-#websiteProject img {
-  width:100%;
-  box-shadow: 0 0 10px rgba(6, 60, 235, 0.212);
-  border-radius: 20px;
-}
-
-#websiteProject {
-  padding-top: 7%;
-}
-
 
 
 #about {
@@ -608,11 +597,6 @@ vertical-align: middle;
   }
 
 
-  #vegetableProject img {
-      width:80%;
-      height: 80%;
-  }
-
   #vegetable_text, #capstone_text, #sapphire_text, #website_text {
       float: none;
       font-size: 18px;
@@ -622,7 +606,7 @@ vertical-align: middle;
   }
 
 
-  #websiteProject img{
+  #websiteProject img,  #vegetableProject img, #reviewProject img{
       width:80%;
       height: 80%;
   }
