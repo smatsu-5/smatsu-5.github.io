@@ -9,6 +9,12 @@ background: white;
 border-bottom: 2px solid black;
 }
 
+.image {
+  width: 45%;
+  display: flex;
+  align-items: center;
+}
+
 #navLinks {
     display: flex;
     flex-direction: row;
@@ -131,7 +137,7 @@ ol {
 }
 
 p{
-  text-align: left; 
+  text-align: center; 
   font-size: 18px;
 }
 
@@ -214,11 +220,10 @@ p{
 }
 
 #capstoneProject img {
-  width: 25%;
-  height: 30%;
+  width: 50%;
   box-shadow: 0 0 10px rgba(6, 60, 235, 0.212);
   border-radius: 40px;
-  margin-top: 5%;
+  margin: auto;
 }
 
 #copyright {
@@ -303,17 +308,12 @@ width: 50%;
 }
 
 #sapphireProject img {
-  width:45%;
-  height: 50%;
+  width:100%;
   box-shadow: 0 0 10px rgba(6, 60, 235, 0.212);
   border-radius: 40px;
 }
 
-#sapphire_text {
-  float: left;
-  width: 50%;
-  margin-right: 3%;
-}
+
 
 #sidenav {
   display: none;
@@ -379,7 +379,11 @@ width: 50%;
 vertical-align: middle;
 }
 
+.projectSections {
+  display: flex;
+  justify-content: space-between;
 
+}
 
 
 #topnav {
@@ -399,21 +403,18 @@ vertical-align: middle;
 }
 
 #vegetableProject img {
-  width:25%;
-  height: 40%;
+  width:100%;
   box-shadow: 0 0 10px rgba(6, 60, 235, 0.212);
   border-radius: 20px;
 }
 
-#vegetable_text {
+#vegetable_text, #capstone_text, #website_text, #sapphire_text {
+  width: 50%;
   float: right;
-  width: 65%;
-  padding-top: 5%;
 }
 
 #websiteProject img {
-  width:45%;
-  height: 45%;
+  width:100%;
   box-shadow: 0 0 10px rgba(6, 60, 235, 0.212);
   border-radius: 20px;
 }
@@ -422,11 +423,7 @@ vertical-align: middle;
   padding-top: 7%;
 }
 
-#website_text {
-  float: left;
-  width: 55%;
-  padding-top: 5%;
-}
+
 
 #about {
   display: none;
@@ -612,8 +609,8 @@ vertical-align: middle;
 
 
   #vegetableProject img {
-      width:50%;
-      height: 50%;
+      width:80%;
+      height: 80%;
   }
 
   #vegetable_text, #capstone_text, #sapphire_text, #website_text {
@@ -637,6 +634,27 @@ vertical-align: middle;
 
   #myLinks {
     display: inline;
+  }
+
+  #linksRect {
+    width: 30%;
+    height: 30%;
+    left: 60%;
+    top:60%;
+  }
+
+  #nameRect {
+    width: 45%;
+    height: 20%;
+    left: 50%;
+    top:15%;
+  }
+
+  #descRect {
+    width: 63%;
+    height: 50%;
+    left: 5%;
+    top: 30%;
   }
 }
 
