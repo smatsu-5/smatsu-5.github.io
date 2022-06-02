@@ -422,6 +422,7 @@ vertical-align: middle;
 @media only screen and (max-width: 1000px) {
   p {
       text-align: center;
+      font-size: 80%;
   }
 
   ul {
@@ -598,7 +599,7 @@ vertical-align: middle;
   }
 
 
-  #vegetable_text, #capstone_text, #sapphire_text, #website_text {
+  #vegetable_text, #capstone_text, #sapphire_text, #website_text, #review_text {
       float: none;
       font-size: 18px;
       margin:5px;
@@ -641,7 +642,22 @@ vertical-align: middle;
     left: 5%;
     top: 30%;
   }
+
+
+  .projectSections {
+    display: block;
+    justify-content: none;
+    padding-bottom: 10%;
+  }
+
+  .image {
+    width: 100%;
+
+  }
 }
+
+
+
 
 
 
