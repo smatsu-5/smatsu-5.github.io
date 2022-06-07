@@ -29,8 +29,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-  
-  <!--My CSS and JS files-->
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">  
   <script type="module" src="index.js"></script>  
 </head>
@@ -39,54 +38,41 @@
   <header id="home">
     <!---->
       <div id="navbar">
-        <a href="smatsu-5.github.io"><img id="logoImg" src="favicon/android-chrome-192x192.png" alt="Logo"></a>
-        <div id="navLinks">
+        <div id = "logo">
+          <a href="smatsu-5.github.io"><img id="logoImg" src="favicon/icon.png" alt="Logo"></a>
+        </div>
+          <div id="navLinks">
+          <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#interests">Interests</a>
         </div><!--End of mobilenav-->
       </div><!--End of mobilenavLinks-->
-     <div id="bkg">
-      <div id = "descRect">
-        <div id = "desc">
-        <h4><b>About Me</b></h4>
-        <p style = "text-align: center; font-size: 14px;">I graduated from The Ohio State University with a B.S. in
-          Computer Science specializing in software engineering.
-
-          <br><br>
-
-          I am currently seeking a full time software engineer position. I am more 
-          experienced in frontend development but have also worked with the backend.
-        </p>
+   
+      <div id="introDiv">
+        <div class ="intro" id="nameText">Hello World, I'm Sana!</div>        <br>
+        <div class ="intro" id="introText">Welcome to my site where I introduce my skills and projects.</div>
+        <br><br>
+        <div id="links">
+          <div id="myLinks">
+            <li id = "linkedinIcon">
+              <a href="https://www.linkedin.com/in/sanamatsumoto/">
+                <i class="fa fa-brands fa-linkedin"></i>
+              </a>
+            </li><!--End of linkedinIcon-->
+            <li  id="githubIcon">
+              <a href = "https://github.com/smatsu-5">
+                <i class="fa fa-brands fa-github" ></i>
+              </a>
+            </li><!--End of #githubIcon-->
+            <li id="emailIcon">
+              <a href = "mailto:sana.matsumoto@gmail.com">
+                <i class="fa fa-regular fa-envelope" ></i>
+              </a>
+            </li><!--End of #emailIcon-->
+          </div><!--End of #myLinks-->
+        </div>
       </div>
-      </div>
-      <div id="linksRect">
-        <ul id="myLinks">
-          <li id = "linkedinIcon">
-            <a href="https://www.linkedin.com/in/sanamatsumoto/">
-              <i class="fa fa-brands fa-linkedin"></i>
-            </a>
-          </li><!--End of linkedinIcon-->
-          <li  id="githubIcon">
-            <a href = "https://github.com/smatsu-5">
-              <i class="fa fa-brands fa-github" ></i>
-            </a>
-          </li><!--End of #githubIcon-->
-          <li id="emailIcon">
-            <a href = "mailto:sana.matsumoto@gmail.com">
-              <i class="fa fa-regular fa-envelope" ></i>
-            </a>
-          </li><!--End of #emailIcon-->
-        </ul><!--End of #myLinks-->
-
-      </div>
-       <div id="nameRect">
-          <div id="intro">
-            <h2><b>Hi, I'm Sana!</b></h2>
-          </div>
-        
-      </div>
-    </div>
 
   </header> <!--End of #home-->
 
@@ -94,6 +80,7 @@
   <div id="sidenav">
     <div id = "sidenavLinks">
       <a href="#home" id="homeLink" class="navlink current"><i class="fa-solid fa-house"></i></a>
+      <a href="#about" id="aboutLink" class="navlink"><i class="fa-solid fa-circle-user"></i></a>
       <a href="#skills" id="skillsLink" class="navlink"><i class="fa-solid fa-code fa-sm"></i></a>
       <a href="#projects" id="projectsLink" class="navlink"><i class="fa-solid fa-folder-open"></i></a>
       <a href="#interests" id="interestsLink" class="navlink"><i class="fa-solid fa-camera"></i></a>
@@ -104,6 +91,7 @@
   <div id="mobilenav">
     <div id="mobilenavLinks">
       <a href="#home">Home</a>
+      <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#interests">Interests</a>
@@ -114,12 +102,27 @@
   
   <div id="main">
     <section id="about" class="container sections">
+      <h2 class="sectionHeader">About</h2>    
+      <br>
+      <p>
+        Hello! My name is Sana. I graduated from the Ohio State University 
+        and received a BS in Computer Science and Engineering specializing 
+        in software engineering.
+        <br><br>
+        During my Senior Capstone project at OSU, I've learned that I enjoyed
+        working with frontend and web development. I had fun bringing wireframes 
+        to life and creating a functional web application. Check out my skills <a href="#skills">below</a>!
+
+        <br><br>
+        I am currently seeking a full time software engineer position. I would love to work with 
+        you in frontend development, please feel free to <a href = "mailto:sana.matsumoto@gmail.com">contact me</a>
+      </p>    
     </section> <!--End of About Section-->
     <section id="skillsSection" class ="container sections"> 
       <h2 id="skills" class="sectionHeader">Skills</h2>
       <br>
       <div id="languagesGroup">
-        <p>Familiar with</p>
+        <p>Languages</p>
         <ul class="iconGroup">
           <li class="icons">
             <i class="fa-brands fa-python"> Python</i>
@@ -176,7 +179,11 @@
           <div id="review_text">
           <p class="projectHeader">Data Structures and Algorithms Review Web App</p>
           <p>
-            Deployed a progressive web app to review data structures and algorithms.
+            Deployed a progressive web app via Google Firebase. The app is used to 
+            help myself have a place where I can keep my notes on data structures 
+            and algorithms. It was also a way for me to learn about React and 
+            create a project using it. 
+
           </p>
           <br>
           <p>Technologies used: React, CSS, React Bootstrap, Google Firebase</p>
@@ -190,13 +197,14 @@
         <div id = "vegetable_text">
           <p class="projectHeader">Vegetable Weight Progressive Web App</p>
           <p>
-            The PWA was created to help a produce department in weighting their products according to a target cost.
+            Deployed a progessive web app via Google Firebase. The app was created to help the produce department
+            in weighting their products according to a target cost.
             The app allows users to view a produce's price/lbs and weights for the target costs. The app is hosted
             in Google Firebase and uses its database components to store data and images. 
             <br><br>
 
-            A manager view allows a user to add and change products in the database.
-
+            There is a manager view that allows the manager to change prices and target costs as well as add new
+            products to the database. 
             <br><br>
           </p>
           <p>Technologies used: HTML, CSS, Javascript, jQuery, Bootstrap,Google Firebase</p>    
@@ -205,7 +213,7 @@
 
       <div class="projectSections" id="websiteProject">
         <div class="image">
-          <img class="projectImg" src="images/website-small.jpg" alt="Personal Website">
+          <img class="projectImg" src="images/website.jpg" alt="Personal Website">
         </div>
           <div id="website_text">
           <p class="projectHeader">Personal Website</p>
@@ -226,10 +234,10 @@
             My tasks focused mostly on the frontend of the web application.
             <br><br>
             Implemented: <br>
-            o	An animation transition for mobile screens<br>
-            o	A click/drag feature for the schedule maker <br>
-            o	An auto archive feature to the messaging system <br>
-            o	A cleaner time-off request submission feature
+            <li class = "list">An animation transition for mobile screens</li>
+            <li class = "list">A click/drag feature for the schedule maker</li>
+            <li class = "list">An auto archive feature to the messaging system</li>
+            <li class = "list">A cleaner time-off request submission feature</li>
           </p>
           <p>Technologies used: HTML, CSS, JavaScript, Bootstrap, Python(Django), jQuery</p>
         </div><!--End of #capstone_text-->
@@ -257,8 +265,7 @@
       <h2 id="interests" class="sectionHeader">Interests</h2>
       <br>
       <p class="projectHeader">Photography</p>
-      <br>
-      <div id="galleryThumbnails">
+      <div id="gallery">
         <div id="photoGallery" class="carousel slide carousel-fade"  data-pause="false" data-ride="carousel" data-interval="5000">
           <div class="carousel-inner" id="galleryItems" role="listbox">  <!--Images container-->
             <div class="item active">
@@ -338,147 +345,7 @@
         </div><!--End of #photoGallery-->
 
       
-        <div id="thumbnails" class="carousel slide" data-ride="carousel" data-pause="false" data-interval="20000" >
-          <!-- Carousel items -->
-          <div class="carousel-inner">
-            <ol class="item active"> 
-              <li>
-                <div data-target="#photoGallery" data-slide-to="0">
-                  <div class="card mb-2">
-                    <img src="images/blue_flowers_small.JPG" alt="Blue Flowers">
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div data-target="#photoGallery" data-slide-to="1">
-                  <div class="card mb-2">
-                    <img src="images/city_small.JPG" alt="Tokyo">
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div data-target="#photoGallery" data-slide-to="2">
-                  <div class="card mb-2">
-                    <img src="images/deer_small.JPG" alt="Nara Deer">
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div data-target="#photoGallery" data-slide-to="3">
-                  <div class="card mb-2">
-                    <img src="images/gion_small.JPG" alt="Gion City">
-                  </div>
-                </div>
-              </li>
-            </ol> <!--End First Set-->
-
-            <ol class="item"> 
-              <li>
-                <div data-target="#photoGallery" data-slide-to="4">
-                  <div class="card mb-2">
-                    <img src="images/gion_river_small.JPG" alt="Gion River">
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div data-target="#photoGallery" data-slide-to="5">
-                  <div class="card mb-2">
-                    <img src="images/kinkakuji_small.JPG" alt="Kinkakuji">
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div data-target="#photoGallery" data-slide-to="6">
-                  <div class="card mb-2">
-                    <img src="images/kitsune_small.JPG" alt="Fox Statue">
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div data-target="#photoGallery" data-slide-to="7">
-                  <div class="card mb-2">
-                    <img src="images/kyoto_small.JPG" alt="Kyoto">
-                  </div>
-                </div>
-              </li>
-            </ol> <!--End Second Set-->
-
-            <ol class="item"> 
-              <li>
-                <div data-target="#photoGallery" data-slide-to="8">
-                  <div class="card mb-2">
-                    <img src="images/kyoto2_small.JPG" alt="Kyoto">
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div data-target="#photoGallery" data-slide-to="9">
-                  <div class="card mb-2">
-                    <img src="images/kyoto3_small.JPG" alt="Kyoto">
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div data-target="#photoGallery" data-slide-to="10">
-                  <div class="card mb-2">
-                    <img src="images/kyoto_lantern_small.JPG" alt="Kyoto Lantern">
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div data-target="#photoGallery" data-slide-to="11">
-                  <div class="card mb-2">
-                    <img src="images/starbucks_small.JPG" alt="Kyoto Starbucks">
-                  </div>
-                </div>
-              </li>
-            </ol> <!--End Third Set-->
-
-            <ol class="item"> 
-              <li>
-                <div data-target="#photoGallery" data-slide-to="12">
-                  <div class="card mb-2">
-                    <img src="images/temple_small.JPG" alt="Temple">
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div data-target="#photoGallery" data-slide-to="13">
-                  <div class="card mb-2">
-                    <img src="images/temple2_small.JPG" alt="Temple">
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div data-target="#photoGallery" data-slide-to="14">
-                  <div class="card mb-2">
-                    <img src="images/temple_trees_small.JPG" alt="Temple in Trees">
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div data-target="#photoGallery" data-slide-to="15">
-                  <div class="card mb-2">
-                    <img src="images/tower_river_small.JPG" alt="River from Tower">
-                  </div>
-                </div>
-              </li>
-            </ol> <!--End Fourth Set-->
-
-            <a class="left carousel-control" href="#thumbnails" data-slide="prev">
-              <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#thumbnails" data-slide="next">
-              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-              <span class="sr-only">Next</span>
-            </a>  
-          </div>
-
-
-        </div><!--End of #thumbnails-->
-      
-      </div> <!--End of #galleryThumbnails-->
+      </div> <!--End of #gallery-->
 
         
     </section><!--End of Interests Section-->

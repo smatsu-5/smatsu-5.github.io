@@ -5,8 +5,7 @@ flex-direction: row;
 align-items: center;
 padding: 0px;
 gap: 594px;
-background: white;
-border-bottom: 2px solid black;
+
 }
 
 .image {
@@ -19,9 +18,10 @@ border-bottom: 2px solid black;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap:100px;
-  right: 100px;
+    gap:60px;
+  right: 30px;
   position: absolute;
+  color:white;
   }
 
   #logoImg {
@@ -29,83 +29,58 @@ border-bottom: 2px solid black;
   }
 
   #myLinks {
-    margin: auto;
-    vertical-align: middle;
-    text-align: center;
-    justify-content: space-evenly;
-    display: flex;
-  }
-  #nameRect {
-    box-sizing: border-box;
-    position: absolute;
-    width: 30%;
-    height: 28%;
-    left: 50%;
-    top: 15%;
-    background: #FFFFFF;
-    border: 5px solid #003A7B;
-    z-index: 3;
-    display: flex;
-  }
-  #intro {
-    margin: auto;
-    vertical-align: middle;
-  }
-  #desc {
-    margin: auto;
-    vertical-align: middle;
-    text-align: center;
-    width: 90%;
-  }
-  #line {
-    position: absolute;
-width: inherit;
-height: 0px;
-left: 0px;
-top: 10%;
 
-border: 1px solid #000000;
-transform: rotate(0.16deg);
-  }
-  #descRect {
-    box-sizing: border-box;
-    position: absolute;
-    width: 45%;
-    height: 50%;
-    left: 10%;
-    top:30%;
-    background: #FFFFFF;
-    border: 5px solid #003A7B;
-    z-index: 2;
+    justify-content: space-between;
     display: flex;
   }
-  #linksRect {
+
+
+  #introDiv {
+    position: relative;
+    top:20%;
+    padding-left: 10%;
+    
+  }
+
+  .intro{
+    font-family: futura;
+    text-align: left;
+    color: white;
+  }
+
+  #introText{
+    font-size: 2vw;
+    font-family: 'Questrial', sans-serif;
+  }
+
+  #nameText {
+    color: white;
+    font-size: 60px;
+    font-family: 'Questrial', sans-serif;
+    letter-spacing: 5px;
+    }
+
+  #links {
     box-sizing: border-box;
-    position: absolute;
-    width: 40%;
-    height: 24%;
-    left: 50%;
-    top: 65%;
+    width: 30%;
     z-index: 1;
-    background: #FFFFFF;
-    border: 5px solid #003A7B;
-    display: flex;
   }
 
   #navLinks a{
-    font-family: 'Inter';
+    font-family: 'Questrial', sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
+    font-weight: 500;
+    font-size: 20px;
     line-height: 46px;
+    color: white;
     /* identical to box height */
     
     
   }
-html, body {
+body {
   margin: 0;
   height: 100%;
-  background-color: white;
+
   scroll-behavior: smooth;
 }
 
@@ -113,19 +88,19 @@ header {
   position: relative;
   width:100%;
   overflow: hidden;
-  text-align: center;
-  background-image: url("images/bkg_small.jpg");
-  display: block;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: rgb(0, 87, 168);
+background: linear-gradient(180deg, rgb(0, 87, 168) 35%, rgba(179,217,234,1) 90%, rgba(255,255,255,1) 100%);
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
   
 }
 
 footer {
   position:relative;
-  background-color: black;
+  background-color: #0057a8;
   height: 40px;
   color: white;
   width:100%;
@@ -136,11 +111,15 @@ ol {
   padding: 0;
 }
 
-p{
-  text-align: center; 
-  font-size: 18px;
+#about p{
+  text-align: left;
 }
 
+p, .list{
+  text-align: left; 
+  font-size: 18px;
+  font-family: 'Questrial', sans-serif;
+}
 
 /*Classes*/
 
@@ -170,7 +149,7 @@ p{
 .projectHeader {
   font-size: 2vw;
   text-align: center;
-  color:#d17803;
+  color:#E29D6A;
 }
 
 .rectangle {
@@ -189,7 +168,7 @@ p{
 }
 
 .sectionHeader {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Questrial', sans-serif;
   font-style: bold;
   font-size: 2.8vw;
   color: #0077b6;
@@ -206,11 +185,11 @@ p{
 
 /*Id*/
 
-#skills, #projects, #interests {
+#about, #skills, #projects, #interests {
   scroll-margin-top: 10px;
 }
 
-#projects, #skills, #interests {
+#about, #projects, #skills, #interests {
   position: relative;
   width: 100%;
 }
@@ -238,7 +217,6 @@ p{
 /*My links*/
 #emailIcon, #githubIcon, #linkedinIcon {
   display: inline;  
-  padding-inline: 20%;
   font-size: 40px;
 }
 
@@ -260,9 +238,6 @@ p{
   text-align: center;
 }
 
-#galleryThumbnails {
-  padding: 0% 5%;
-}
 
 
 #icon {
@@ -273,6 +248,11 @@ width: 50%;
 #languagesGroup {
   float: left;
   width:50%;
+}
+
+#logo {
+  display: flex;
+  padding-left: 2%;
 }
 
 #logomobile {
@@ -303,9 +283,14 @@ width: 50%;
   text-align: center;
 }
 
+#gallery {
+  display: flex;
+}
+
 #photoGallery {
-  width:75%;
-  float: left;
+  width:65%;
+  margin: auto;
+  margin-top: 5%;
 }
 
 #sapphireProject img {
@@ -317,8 +302,8 @@ width: 50%;
 
 
 #sidenav {
-  display: none;
   height: 70%;
+  display: none;
   width: 100px;
   top:0;
   bottom: 0;
@@ -414,12 +399,7 @@ vertical-align: middle;
   float: right;
 }
 
-
-#about {
-  display: none;
-}
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
   p {
       text-align: center;
       font-size: 80%;
@@ -429,7 +409,9 @@ vertical-align: middle;
       padding: 0;
   }
 
-
+  #sidenav{
+    visibility: hidden;
+  }
  
   /*Skill icons*/
   .icons {
@@ -471,12 +453,19 @@ vertical-align: middle;
       font-size: 30px;
   }
 
+  #about {
+    font-size: 20px;
+  }
 
-  #skills, #projects, #interests {
+
+  #about, #skills, #projects, #interests {
     scroll-margin-top: 80px;
   }
   
-  
+  #photoGallery {
+    width:auto;
+
+  }
   #capstoneProject img {
       width: 60%;
       height: 60%;
@@ -490,7 +479,6 @@ vertical-align: middle;
 
   #emailIcon, #githubIcon, #linkedinIcon {
       display: inline-block;  
-      padding-inline: 40%;
       font-size: 32px;
   }
 
@@ -575,18 +563,13 @@ vertical-align: middle;
       text-align: center;
   }
 
-  #photoGallery {
-      width: auto;
-  }
 
   #sapphireProject img{
       width: 80%;
       height: 80%;
   }
 
-  #sidenav {
-      visibility: hidden;
-  }
+
 
   #techGroup p,#languagesGroup p{
       font-size: 25px;
@@ -614,33 +597,13 @@ vertical-align: middle;
   }
 
   #navbar {
-    visibility: hidden;
+    display: none;
   }
 
-
-  #myLinks {
-    display: inline;
-  }
-
-  #linksRect {
-    width: 30%;
-    height: 30%;
-    left: 60%;
-    top:60%;
-  }
-
-  #nameRect {
-    width: 45%;
-    height: 20%;
-    left: 50%;
-    top:15%;
-  }
-
-  #descRect {
-    width: 63%;
-    height: 50%;
-    left: 5%;
-    top: 30%;
+  #links {
+    width: fit-content;
+    display: flex;
+    margin:auto;
   }
 
 
@@ -653,6 +616,20 @@ vertical-align: middle;
   .image {
     width: 100%;
 
+  }
+
+  .intro {
+    text-align: center;
+  }
+
+  #introDiv {
+    padding: 0;
+  }
+
+  #myLinks {
+    justify-content: space-between;
+    display: flex;
+    gap:100px;
   }
 }
 

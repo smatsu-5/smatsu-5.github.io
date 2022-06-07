@@ -13,10 +13,13 @@ var projectsHeight = document.getElementById("projectsSection").offsetHeight;
 var interestsHeight = document.getElementById("interestsSection").offsetHeight;
 
 var sidenav = document.getElementById("sidenav");
+var text = document.getElementById("nameText");
+
 
 
 /*Changes the active link based on where the page is scrolled through*/
 $(document).ready(function() {
+
     $(window).scroll(function (event) {
         var scrollPos = $(document).scrollTop();
         if (scrollPos <= (homePos + homeHeight)){
@@ -25,8 +28,11 @@ $(document).ready(function() {
         else if(scrollPos >= (homePos + homeHeight)){
             $("#sidenav").fadeIn(2500);
         }
-        if ((scrollPos > skillsPos+300) && scrollPos< (skillsPos + skillsHeight)+200)  {
+        if ((scrollPos > aboutPos) && scrollPos< (aboutPos + aboutHeight)+200)  {
             $("#sidenavLinks a").removeClass("current");
+            $("#aboutLink").addClass("current");
+        }
+        else if ((scrollPos > skillsPos+300) && scrollPos< (skillsPos + skillsHeight)+200)  {            $("#sidenavLinks a").removeClass("current");
             $("#skillsLink").addClass("current");
         }
         else if ((scrollPos > (projectsPos+300)) && scrollPos< (projectsPos + projectsHeight)+200)  {
@@ -39,7 +45,13 @@ $(document).ready(function() {
         }
     });
 
+ 
+
 });
+
+
+
+
 
 /*Changes the active link to the link clicked by the user*/
 $("#sidenavLinks a").click(function() {
@@ -53,7 +65,27 @@ $('header').css({ 'height': $(window).height() });
 $(window).on('resize', function() {
 
      $('header').css({ 'height': $(window).height() });
+    if (window.innerWidth < 800) {
+        text.innerHTML = "Hello World,<br> I'm Sana!";
+    }
+    else {
+        text.innerHTML = "Hello World, I'm Sana!";
+    }
 });
+
+
+if ($(window).width() < 800) {
+    text.innerHTML = "Hello World,<br> I'm Sana!";
+
+}
+
+$('#about').css({ 'height': $(window).height() });
+$(window).on('resize', function() {
+
+     $('#about').css({ 'height': $(window).height() });
+});
+
+
 
 
 
