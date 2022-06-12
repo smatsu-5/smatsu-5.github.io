@@ -1,14 +1,14 @@
 var currentScroll = $(window).scrollTop();
 
 var homePos = document.getElementById("home").offsetTop;
-var aboutPos = document.getElementById("about").offsetTop;
+var aboutPos = document.getElementById("aboutSection").offsetTop;
 var skillsPos = document.getElementById("skillsSection").offsetTop;
 var projectsPos = document.getElementById("projectsSection").offsetTop;
 var interestsPos = document.getElementById("interestsSection").offsetTop;
 
 var homeHeight = document.getElementById("home").offsetHeight;
 var skillsHeight = document.getElementById("skillsSection").offsetHeight;
-var aboutHeight = document.getElementById("about").offsetHeight;
+var aboutHeight = document.getElementById("aboutSection").offsetHeight;
 var projectsHeight = document.getElementById("projectsSection").offsetHeight;
 var interestsHeight = document.getElementById("interestsSection").offsetHeight;
 
@@ -21,6 +21,7 @@ var text = document.getElementById("nameText");
 $(document).ready(function() {
 
     $(window).scroll(function (event) {
+        
         var scrollPos = $(document).scrollTop();
         if (scrollPos <= (homePos + homeHeight)){
             $("#sidenav").fadeOut(500);
@@ -32,14 +33,15 @@ $(document).ready(function() {
             $("#sidenavLinks a").removeClass("current");
             $("#aboutLink").addClass("current");
         }
-        else if ((scrollPos > skillsPos+300) && scrollPos< (skillsPos + skillsHeight)+200)  {            $("#sidenavLinks a").removeClass("current");
+        else if ((scrollPos > skillsPos) && scrollPos< (skillsPos + skillsHeight)+200)  {            
+            $("#sidenavLinks a").removeClass("current");
             $("#skillsLink").addClass("current");
         }
-        else if ((scrollPos > (projectsPos+300)) && scrollPos< (projectsPos + projectsHeight)+200)  {
+        else if ((scrollPos > (projectsPos)) && scrollPos< (projectsPos + projectsHeight)+200)  {
             $("#sidenavLinks a").removeClass("current");
             $("#projectsLink").addClass("current");
         }
-        else if ((scrollPos> interestsPos+300) && scrollPos < (interestsPos + interestsHeight))  {
+        else if ((scrollPos> interestsPos) && scrollPos < (interestsPos + interestsHeight))  {
             $("#sidenavLinks a").removeClass("current");
             $("#interestsLink").addClass("current");
         }
@@ -78,16 +80,6 @@ if ($(window).width() < 800) {
     text.innerHTML = "Hello World,<br> I'm Sana!";
 
 }
-
-$('#about').css({ 'height': $(window).height() });
-$(window).on('resize', function() {
-
-     $('#about').css({ 'height': $(window).height() });
-});
-
-
-
-
 
 
 /*Changes interval of thumbnail gallery according to the thumbnail selected*/

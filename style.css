@@ -5,7 +5,7 @@ flex-direction: row;
 align-items: center;
 padding: 0px;
 gap: 594px;
-
+background-color: #90B4CE;
 }
 
 .image {
@@ -25,7 +25,7 @@ gap: 594px;
   }
 
   #logoImg {
-    width: 20%;
+    width: 15%;
   }
 
   #myLinks {
@@ -45,7 +45,7 @@ gap: 594px;
   .intro{
     font-family: futura;
     text-align: left;
-    color: white;
+    color: #001858;
   }
 
   #introText{
@@ -54,10 +54,10 @@ gap: 594px;
   }
 
   #nameText {
-    color: white;
     font-size: 60px;
     font-family: 'Questrial', sans-serif;
     letter-spacing: 5px;
+    animation: fadeInDown 3s;
     }
 
   #links {
@@ -72,15 +72,14 @@ gap: 594px;
     font-weight: 500;
     font-size: 20px;
     line-height: 46px;
-    color: white;
-    /* identical to box height */
+    color: #232994;    /* identical to box height */
     
     
   }
 body {
   margin: 0;
   height: 100%;
-
+  background-color:#f3d2c1;
   scroll-behavior: smooth;
 }
 
@@ -88,8 +87,7 @@ header {
   position: relative;
   width:100%;
   overflow: hidden;
-  background: rgb(0, 87, 168);
-background: linear-gradient(180deg, rgb(0, 87, 168) 35%, rgba(179,217,234,1) 90%, rgba(255,255,255,1) 100%);
+  background: #FFF7F0;
     display: block;
     background-position: center;
     background-repeat: no-repeat;
@@ -111,7 +109,7 @@ ol {
   padding: 0;
 }
 
-#about p{
+#aboutSection p{
   text-align: left;
 }
 
@@ -124,7 +122,7 @@ p, .list{
 /*Classes*/
 
 .fa {
-  color: black;
+  color: #EF455B;
 }
 
 .fa-bars {
@@ -158,13 +156,20 @@ p, .list{
   background-color: #003A7B;
 }
 
+h2 {
+  margin: 0px;
+}
 .sections {
   font-size: 60px;
-  padding: 5% 5% 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 3% 3% 3%;
   line-height: 30px;
   font-family: 'Montserrat', sans-serif;
   position: relative;
-  width: 100%;
+  width: 75%;
+  background: #FFF7F0;
+  border-radius: 50px;
 }
 
 .sectionHeader {
@@ -185,13 +190,17 @@ p, .list{
 
 /*Id*/
 
-#about, #skills, #projects, #interests {
+#skills, #projects, #interests {
   scroll-margin-top: 10px;
-}
-
-#about, #projects, #skills, #interests {
   position: relative;
   width: 100%;
+}
+
+#about {
+  scroll-margin-top: 100px;
+  position: relative;
+  width: 100%;
+  
 }
 
 #capstone_text {
@@ -288,9 +297,8 @@ width: 50%;
 }
 
 #photoGallery {
-  width:65%;
+  width:75%;
   margin: auto;
-  margin-top: 5%;
 }
 
 #sapphireProject img {
@@ -400,10 +408,7 @@ vertical-align: middle;
 }
 
 @media only screen and (max-width: 800px) {
-  p {
-      text-align: center;
-      font-size: 80%;
-  }
+
 
   ul {
       padding: 0;
@@ -616,10 +621,6 @@ vertical-align: middle;
   .image {
     width: 100%;
 
-  }
-
-  .intro {
-    text-align: center;
   }
 
   #introDiv {
