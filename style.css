@@ -57,7 +57,7 @@ background-color: #90B4CE;
     font-size: 60px;
     font-family: 'Questrial', sans-serif;
     letter-spacing: 5px;
-    animation: fadeInDown 3s;
+    animation: fadeInDown 4s;
     }
 
   #links {
@@ -76,7 +76,8 @@ background-color: #90B4CE;
     
     
   }
-body {
+
+html, body {
   margin: 0;
   height: 100%;
   background-color:#f3d2c1;
@@ -92,6 +93,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
 
   
 }

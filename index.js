@@ -14,6 +14,34 @@ var interestsHeight = document.getElementById("interestsSection").offsetHeight;
 
 var sidenav = document.getElementById("sidenav");
 var text = document.getElementById("nameText");
+document.onreadystatechange = function() {
+    if (document.readyState !== "complete") {
+        document.querySelector("body").style.visibility = "hidden";
+        document.querySelector("#loader").style.visibility = "visible";
+    } else {
+        document.querySelector("#loader").style.display = "none";
+        document.querySelector("body").style.visibility = "visible";
+    }
+};
+
+/*Changes height of header images according to the screen size*/ 
+$('header').css({ 'height': $(window).height() });
+$(window).on('resize', function() {
+
+     $('header').css({ 'height': $(window).height() });
+    if (window.innerWidth < 800) {
+        text.innerHTML = "Hello World,<br> I'm Sana!";
+    }
+    else {
+        text.innerHTML = "Hello World, I'm Sana!";
+    }
+});
+
+
+if ($(window).width() < 800) {
+    text.innerHTML = "Hello World,<br> I'm Sana!";
+
+}
 
 
 
@@ -62,24 +90,6 @@ $("#sidenavLinks a").click(function() {
 });
 
 
-/*Changes height of header images according to the screen size*/ 
-$('header').css({ 'height': $(window).height() });
-$(window).on('resize', function() {
-
-     $('header').css({ 'height': $(window).height() });
-    if (window.innerWidth < 800) {
-        text.innerHTML = "Hello World,<br> I'm Sana!";
-    }
-    else {
-        text.innerHTML = "Hello World, I'm Sana!";
-    }
-});
-
-
-if ($(window).width() < 800) {
-    text.innerHTML = "Hello World,<br> I'm Sana!";
-
-}
 
 
 /*Changes interval of thumbnail gallery according to the thumbnail selected*/
