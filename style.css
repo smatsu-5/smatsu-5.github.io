@@ -39,17 +39,19 @@ background-color: #90B4CE;
     position: relative;
     top:20%;
     padding-left: 10%;
-    
+   
   }
 
   .intro{
     font-family: futura;
     text-align: left;
     color: #001858;
+    animation: fadeInLeft 3.5s;
+    animation-fill-mode: both;
   }
 
   #introText{
-    font-size: 2vw;
+    font-size: 26px;
     font-family: 'Questrial', sans-serif;
   }
 
@@ -57,7 +59,7 @@ background-color: #90B4CE;
     font-size: 60px;
     font-family: 'Questrial', sans-serif;
     letter-spacing: 5px;
-    animation: fadeInDown 4s;
+    
     }
 
   #links {
@@ -171,7 +173,7 @@ h2 {
   position: relative;
   width: 75%;
   background: #FFF7F0;
-  border-radius: 50px;
+  border-radius: 25px;
 }
 
 .sectionHeader {
@@ -229,7 +231,30 @@ h2 {
 #emailIcon, #githubIcon, #linkedinIcon {
   display: inline;  
   font-size: 40px;
+  
+
 }
+
+#emailIcon {
+  animation: fadeInDown 3s;
+  animation-delay: 3s;
+  animation-fill-mode: both;
+  
+}
+
+#githubIcon {
+  animation: fadeInDown 3s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+
+#linkedinIcon {
+  animation: fadeInDown 3s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+
 
 #header-text {
   position:absolute;
@@ -278,15 +303,6 @@ width: 50%;
 
 #mobilenav {
   visibility: hidden;
-}
-
-
-#name {
-  font-size: 6vw;
-  font-family: fantasy;
-  letter-spacing: 3px;
-  white-space: nowrap;
-
 }
 
 
@@ -451,6 +467,7 @@ vertical-align: middle;
       line-height: 30px;
       font-family: 'Montserrat', sans-serif;
       padding-bottom: 5%;
+      width: 90%;
   }
 
   .sectionHeader {
@@ -555,12 +572,7 @@ vertical-align: middle;
   }
 
  
-  #name {
-      font-size: 40px;
-      margin-left: auto;
-      margin-right: auto;
-
-  }
+ 
 
   #nameLinks {
       display: block;
@@ -633,6 +645,10 @@ vertical-align: middle;
     justify-content: space-between;
     display: flex;
     gap:100px;
+  }
+
+  .intro {
+    text-align: center;
   }
 }
 

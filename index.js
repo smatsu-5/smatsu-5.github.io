@@ -12,18 +12,10 @@ var aboutHeight = document.getElementById("aboutSection").offsetHeight;
 var projectsHeight = document.getElementById("projectsSection").offsetHeight;
 var interestsHeight = document.getElementById("interestsSection").offsetHeight;
 
+
+
 var sidenav = document.getElementById("sidenav");
 var text = document.getElementById("nameText");
-document.onreadystatechange = function() {
-    if (document.readyState !== "complete") {
-        document.querySelector("body").style.visibility = "hidden";
-        document.querySelector("#loader").style.visibility = "visible";
-    } else {
-        document.querySelector("#loader").style.display = "none";
-        document.querySelector("body").style.visibility = "visible";
-    }
-};
-
 /*Changes height of header images according to the screen size*/ 
 $('header').css({ 'height': $(window).height() });
 $(window).on('resize', function() {
@@ -47,29 +39,38 @@ if ($(window).width() < 800) {
 
 /*Changes the active link based on where the page is scrolled through*/
 $(document).ready(function() {
-
-    $(window).scroll(function (event) {
-        
+    
+    $(window).scroll(function() {
         var scrollPos = $(document).scrollTop();
         if (scrollPos <= (homePos + homeHeight)){
             $("#sidenav").fadeOut(500);
         }
         else if(scrollPos >= (homePos + homeHeight)){
-            $("#sidenav").fadeIn(2500);
+            $("#sidenav").fadeIn(500);
         }
-        if ((scrollPos > aboutPos) && scrollPos< (aboutPos + aboutHeight)+200)  {
+    })
+
+    $(window).scroll(function () {
+        var scrollPos = $(document).scrollTop();
+        console.log(scrollPos);
+        console.log("aboutSection: ", skillsPos + skillsHeight);
+        
+        
+
+        if ((scrollPos > aboutPos) && scrollPos< (aboutPos + aboutHeight)-200)  {
             $("#sidenavLinks a").removeClass("current");
             $("#aboutLink").addClass("current");
         }
-        else if ((scrollPos > skillsPos) && scrollPos< (skillsPos + skillsHeight)+200)  {            
+        else if ((scrollPos > skillsPos-250) && scrollPos < (skillsPos + skillsHeight)-250)  {            
             $("#sidenavLinks a").removeClass("current");
             $("#skillsLink").addClass("current");
+            console.log("here: ", scrollPos);
         }
-        else if ((scrollPos > (projectsPos)) && scrollPos< (projectsPos + projectsHeight)+200)  {
+        else if ((scrollPos > projectsPos-250) && scrollPos< (projectsPos + projectsHeight)-250)  {
             $("#sidenavLinks a").removeClass("current");
             $("#projectsLink").addClass("current");
         }
-        else if ((scrollPos> interestsPos) && scrollPos < (interestsPos + interestsHeight))  {
+        else if ((scrollPos> interestsPos-250) && scrollPos < (interestsPos + interestsHeight))  {
             $("#sidenavLinks a").removeClass("current");
             $("#interestsLink").addClass("current");
         }
