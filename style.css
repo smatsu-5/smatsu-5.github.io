@@ -102,9 +102,9 @@ header {
 
 footer {
   position:relative;
-  background-color: #0057a8;
+  background-color: #90B4CE;
   height: 40px;
-  color: white;
+  color: black;
   width:100%;
 }
 
@@ -222,9 +222,9 @@ h2 {
 #copyright {
   width: 100%;
   padding-top: 1%;
-  opacity: 30%;
   text-align: center;
   font-size: 1vw;
+  color: #232994;
 }
 
 /*My links*/
