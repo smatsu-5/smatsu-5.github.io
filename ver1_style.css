@@ -1,0 +1,664 @@
+#navbar {
+  visibility: visible;
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 594px;
+background-color: #90B4CE;
+}
+
+.image {
+  width: 45%;
+  display: flex;
+  align-items: center;
+}
+
+#navLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap:60px;
+  right: 30px;
+  position: absolute;
+  color:white;
+  }
+
+  #logoImg {
+    width: 15%;
+  }
+
+  #myLinks {
+
+    justify-content: space-between;
+    display: flex;
+  }
+
+
+  #introDiv {
+    position: relative;
+    top:20%;
+    padding-left: 10%;
+   
+  }
+
+  .intro{
+    font-family: futura;
+    text-align: left;
+    color: #001858;
+    animation: fadeInLeft 3.5s;
+    animation-fill-mode: both;
+  }
+
+  #introText{
+    font-size: 26px;
+    font-family: 'Questrial', sans-serif;
+  }
+
+  #nameText {
+    font-size: 60px;
+    font-family: 'Questrial', sans-serif;
+    letter-spacing: 5px;
+    
+    }
+
+  #links {
+    box-sizing: border-box;
+    width: 30%;
+    z-index: 1;
+  }
+
+  #navLinks a{
+    font-family: 'Questrial', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 46px;
+    color: #232994;    /* identical to box height */
+    
+    
+  }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background-color:#f3d2c1;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: relative;
+  width:100%;
+  overflow: hidden;
+  background: #FFF7F0;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+
+  
+}
+
+footer {
+  position:relative;
+  background-color: #90B4CE;
+  height: 40px;
+  color: black;
+  width:100%;
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+#aboutSection p{
+  text-align: left;
+}
+
+p, .list{
+  text-align: left; 
+  font-size: 18px;
+  font-family: 'Questrial', sans-serif;
+}
+
+/*Classes*/
+
+.fa {
+  color: #EF455B;
+}
+
+.fa-bars {
+  font-size: 40px;
+}
+
+.fa:hover, #sidenavLinks a:hover{
+  color: #d4cece;
+}
+
+.iconGroup {
+  list-style: none;
+  text-align: center;
+  padding: 0%;
+}
+
+.icons {
+  font-size: 24px;
+  padding: 3%;
+}
+
+.projectHeader {
+  font-size: 2vw;
+  text-align: center;
+  color: #EF455B;
+}
+
+.rectangle {
+  height: 50px;
+  width: auto;
+  background-color: #003A7B;
+}
+
+h2 {
+  margin: 0px;
+}
+.sections {
+  font-size: 60px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 3% 3% 3%;
+  line-height: 30px;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  width: 75%;
+  background: #FFF7F0;
+  border-radius: 25px;
+}
+
+.sectionHeader {
+  font-family: 'Questrial', sans-serif;
+  font-style: bold;
+  font-size: 2.8vw;
+  color: #001858;
+}
+
+.topnavlink {
+  position: relative;
+  display: inline-block;
+  padding: 8px 30px;
+  font-size: 16px;
+  color: white;
+
+}
+
+/*Id*/
+
+#skills, #projects, #interests {
+  scroll-margin-top: 10px;
+  position: relative;
+  width: 100%;
+}
+
+#about {
+  scroll-margin-top: 100px;
+  position: relative;
+  width: 100%;
+  
+}
+
+#capstone_text {
+  float: right;
+  width: 65%;
+}
+
+#capstoneProject img {
+  width: 50%;
+  box-shadow: 0 0 10px rgba(6, 60, 235, 0.212);
+  border-radius: 40px;
+  margin: auto;
+}
+
+#copyright {
+  width: 100%;
+  padding-top: 1%;
+  text-align: center;
+  font-size: 1vw;
+  color: #232994;
+}
+
+/*My links*/
+#emailIcon, #githubIcon, #linkedinIcon {
+  display: inline;  
+  font-size: 40px;
+  
+
+}
+
+#emailIcon {
+  animation: fadeInDown 3s;
+  animation-delay: 3s;
+  animation-fill-mode: both;
+  
+}
+
+#githubIcon {
+  animation: fadeInDown 3s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+
+#linkedinIcon {
+  animation: fadeInDown 3s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+
+
+#header-text {
+  position:absolute;
+  top: 0; bottom: 35px; left: 0; right: 0;
+  margin: auto;
+  height: 300px; /*requires explicit height*/
+}
+
+#header-text h1{
+  font: 76px/1.1em 'opensans-bold', sans-serif;
+  font-weight: 800;
+  margin: 0 auto 24px auto;
+}
+
+#header-text p{
+  font: 26px/1.1em 'opensans-bold', sans-serif;
+  text-align: center;
+}
+
+
+
+#icon {
+height: 50%;
+width: 50%;
+}
+
+#languagesGroup {
+  float: left;
+  width:50%;
+}
+
+#logo {
+  display: flex;
+  padding-left: 2%;
+}
+
+#logomobile {
+  color: white;
+  font-size: 30px;
+}
+
+#main {
+  top: 0%;
+  width:auto;
+}
+
+#mobilenav {
+  visibility: hidden;
+}
+
+
+#personal {
+  text-align: center;
+}
+
+#gallery {
+  display: flex;
+}
+
+#photoGallery {
+  width:75%;
+  margin: auto;
+}
+
+#sapphireProject img {
+  width:100%;
+  box-shadow: 0 0 10px rgba(6, 60, 235, 0.212);
+  border-radius: 40px;
+}
+
+#aboutSection a{
+  color: #EF455B;
+}
+
+
+#sidenav {
+  height: 70%;
+  display: none;
+  width: 100px;
+  top:0;
+  bottom: 0;
+  left: 0px;
+  margin: auto;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  justify-content: center;
+
+}
+
+#sidenavLinks {
+  height:70%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom:0;
+  align-items: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+#sidenavLinks a{
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  display: block;
+  font-family: 'uztserrat', sans-serif;  
+  width: fit-content;
+}
+
+
+#sidenavLinks .current {
+  color: #232994;
+}
+
+
+
+#techGroup {
+  float: right;
+  width:50%;
+}
+
+#techGroup p,#languagesGroup p{
+  font-size: 30px;
+  color:#EF455B;
+  text-align: center;
+}
+
+#toggleicon {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top:12px;
+vertical-align: middle;
+}
+
+.projectSections {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10%;
+}
+
+
+#topnav {
+  text-align: center;
+  width: 100%;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+
+#thumbnails {
+  width: 15%; 
+  float:right;
+
+}
+
+#vegetableProject img, #reviewProject img, #websiteProject img {
+  width:100%;
+  box-shadow: 0 0 10px rgba(6, 60, 235, 0.212);
+  border-radius: 20px;
+}
+
+#vegetable_text, #capstone_text, #website_text, #sapphire_text, #review_text {
+  width: 50%;
+  float: right;
+}
+
+@media only screen and (max-width: 800px) {
+
+
+  ul {
+      padding: 0;
+  }
+
+  #sidenav{
+    visibility: hidden;
+  }
+ 
+  /*Skill icons*/
+  .icons {
+      height: 10%;
+      font-size: 16px;
+      width: 100%;
+  }
+
+
+  .iconGroup {
+      list-style: none;
+      justify-content: space-around;
+  }
+
+  .projectHeader {
+      font-size:20px;
+  }
+
+  .projectImg{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 20px;
+      width: auto;
+      height: auto;
+  }
+
+  .sections {
+      font-size: 60px;
+      line-height: 30px;
+      font-family: 'Montserrat', sans-serif;
+      padding-bottom: 5%;
+      width: 90%;
+  }
+
+  .sectionHeader {
+      font-family: 'Montserrat', sans-serif;
+      padding-bottom: 0%;
+      font-style: bold;
+      font-size: 30px;
+  }
+
+  #about {
+    font-size: 20px;
+  }
+
+
+  #about, #skills, #projects, #interests {
+    scroll-margin-top: 80px;
+  }
+  
+  #photoGallery {
+    width:auto;
+
+  }
+  #capstoneProject img {
+      width: 60%;
+      height: 60%;
+  }
+
+  #copyright {
+      opacity: 100%;
+      text-align: center;
+      font-size: 10px;
+  }
+
+  #emailIcon, #githubIcon, #linkedinIcon {
+      display: inline-block;  
+      font-size: 32px;
+  }
+
+  #header-text h1{
+      font: 50px/1.1em 'opensans-bold', sans-serif;
+      font-weight: 800;
+      margin: 0 auto 18px auto;
+  }
+
+
+  #header-text p{
+      font: 20px/1.1em 'opensans-bold', sans-serif;
+
+  }
+
+  #header-text {
+      position:absolute;
+      top: 0; bottom: 15px; left: 0; right: 0;
+      margin: auto;
+      height: 250px; /*requires explicit height*/
+  }
+
+  #icon, #personal {
+      width: 40px;
+  }
+
+
+  
+  #main {
+      left: 0px;
+      width:100%;
+      top:5%;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20%;
+  }
+
+ 
+  #mobilenav {
+      visibility: visible;
+      position: fixed;
+      top: 0px;
+      background-color: black;
+      width:100%;
+      z-index: 100;
+      font-size:20px;
+      height:40px;
+  }
+
+
+  #mobilenavLinks{
+      height:70%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      align-items: center;
+      margin: auto;
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+  #mobilenavLinks a{
+      color: white;
+  }
+
+ 
+ 
+
+  #nameLinks {
+      display: block;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+  }
+
+
+  #sapphireProject img{
+      width: 80%;
+      height: 80%;
+  }
+
+
+
+  #techGroup p,#languagesGroup p{
+      font-size: 25px;
+  }
+
+  #thumbnails {
+      display: none;
+  }
+
+
+  #vegetable_text, #capstone_text, #sapphire_text, #website_text, #review_text {
+      float: none;
+      font-size: 18px;
+      margin:5px;
+      width:100%;
+      padding-top: 5%;
+  }
+
+
+  #websiteProject img,  #vegetableProject img, #reviewProject img{
+      width:80%;
+      height: 80%;
+  }
+
+  #navbar {
+    display: none;
+  }
+
+  #links {
+    width: fit-content;
+    display: flex;
+    margin:auto;
+  }
+
+
+  .projectSections {
+    display: block;
+    justify-content: none;
+    padding-bottom: 10%;
+  }
+
+  .image {
+    width: 100%;
+
+  }
+
+  #introDiv {
+    padding: 0;
+  }
+
+  #myLinks {
+    justify-content: space-between;
+    display: flex;
+    gap:100px;
+  }
+
+  .intro {
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+

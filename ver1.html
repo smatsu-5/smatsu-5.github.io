@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sana Matsumoto</title>
+    <meta name="description" content="Sana Matsumoto's personal website" />
+    <meta name="author" content="Sana Matsumoto" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <!--Favicons-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <script type="module" src="index.js"></script>
+    <!--Bootstrap and jQuery-->
+    <!--
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&family=Space+Grotesk:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="ver1_style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <body>
+    <header id="home">
+      <!---->
+      <div id="navbar">
+        <div id="logo">
+          <a href="smatsu-5.github.io"
+            ><img id="logoImg" src="favicon/icon.png" alt="Logo"
+          /></a>
+        </div>
+        <div id="navLinks">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#interests">Interests</a>
+        </div>
+        <!--End of mobilenav-->
+      </div>
+      <!--End of mobilenavLinks-->
+
+      <div id="introDiv">
+        <div class="intro" id="nameText">Hello World, I'm Sana!</div>
+        <br />
+        <div class="intro" id="introText">
+          Welcome to my site where I introduce my skills and projects.
+        </div>
+        <br /><br />
+        <div id="links">
+          <div id="myLinks">
+            <li id="linkedinIcon">
+              <a href="https://www.linkedin.com/in/sanamatsumoto/">
+                <i class="fa fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <!--End of linkedinIcon-->
+            <li id="githubIcon">
+              <a href="https://github.com/smatsu-5">
+                <i class="fa fa-brands fa-github"></i>
+              </a>
+            </li>
+            <!--End of #githubIcon-->
+            <li id="emailIcon">
+              <a href="mailto:sana.matsumoto2@gmail.com">
+                <i class="fa fa-regular fa-envelope"></i>
+              </a>
+            </li>
+            <!--End of #emailIcon-->
+          </div>
+          <!--End of #myLinks-->
+        </div>
+      </div>
+    </header>
+    <!--End of #home-->
+
+    <div id="sidenav">
+      <div id="sidenavLinks">
+        <a href="#home" id="homeLink" class="navlink current"
+          ><i class="fa-solid fa-house"></i
+        ></a>
+        <a href="#about" id="aboutLink" class="navlink"
+          ><i class="fa-solid fa-circle-user"></i
+        ></a>
+        <a href="#skills" id="skillsLink" class="navlink"
+          ><i class="fa-solid fa-code fa-sm"></i
+        ></a>
+        <a href="#projects" id="projectsLink" class="navlink"
+          ><i class="fa-solid fa-folder-open"></i
+        ></a>
+        <a href="#interests" id="interestsLink" class="navlink"
+          ><i class="fa-solid fa-camera"></i
+        ></a>
+      </div>
+      <!--End of #nav-->
+    </div>
+    <!--End of #sidenav-->
+
+    <div id="mobilenav">
+      <div id="mobilenavLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#interests">Interests</a>
+      </div>
+      <!--End of mobilenav-->
+    </div>
+    <!--End of mobilenavLinks-->
+
+    <div id="main">
+      <section id="aboutSection" class="container sections">
+        <h2 id="about" class="sectionHeader">About</h2>
+        <br />
+        <p>
+          Hello! My name is Sana. I graduated from the Ohio State University and
+          received a BS in Computer Science and Engineering specializing in
+          software engineering.
+          <br /><br />
+          During my Senior Capstone project at OSU, I've learned that I enjoyed
+          working with frontend and web development. I had fun bringing
+          wireframes to life and creating a functional web application. Check
+          out my skills <a href="#skills">below</a>!
+
+          <br /><br />
+          I am currently seeking a full time software engineer position. I would
+          love to work with you in frontend development, please feel free to
+          <a href="mailto:sana.matsumoto2@gmail.com">contact me</a>!
+        </p>
+      </section>
+      <!--End of About Section-->
+      <section id="skillsSection" class="container sections">
+        <h2 id="skills" class="sectionHeader">Skills</h2>
+        <br />
+        <div id="languagesGroup">
+          <p>Languages</p>
+          <ul class="iconGroup">
+            <li class="icons">
+              <i class="fa-brands fa-python"> Python</i>
+            </li>
+            <li class="icons">
+              <i class="fa-brands fa-java"> Java</i>
+            </li>
+            <li class="icons">
+              <i class="fa-brands fa-html5"> HTML</i>
+            </li>
+            <li class="icons">
+              <i class="fa-brands fa-js"> JavaScript</i>
+            </li>
+            <li class="icons">
+              <i class="fa-brands fa-css3"> CSS</i>
+            </li>
+            <li class="icons">
+              <i class="fa-brands fa-react">React</i>
+            </li>
+            <li class="icons">
+              <i class="fa-brands fa-bootstrap"> Bootstrap</i>
+            </li>
+          </ul>
+          <!--End of.iconGroup-->
+        </div>
+        <!--End of #languagesGroup-->
+
+        <div id="techGroup">
+          <p>Technologies</p>
+          <ul class="iconGroup">
+            <li class="icons">
+              <i class="fa-brands fa-github"> GitHub</i>
+            </li>
+            <li class="icons">
+              <i class="fa-solid fa-file-word"> MS Word</i>
+            </li>
+            <li class="icons">
+              <i class="fa-solid fa-file-excel"> MS Excel</i>
+            </li>
+            <li class="icons">
+              <i class="fa-solid fa-file-powerpoint"> MS PowerPoint</i>
+            </li>
+          </ul>
+          <!--End of .iconGroup-->
+        </div>
+        <!--End of #techGroup-->
+      </section>
+      <!--End of Skills Section-->
+
+      <hr />
+      <section id="projectsSection" class="container sections">
+        <h2 id="projects" class="sectionHeader">Projects</h2>
+        <br />
+        <div class="projectSections" id="reviewProject">
+          <div class="image">
+            <img class="projectImg" src="images/review.jpg" alt="Review" />
+          </div>
+          <div id="review_text">
+            <p class="projectHeader">
+              Data Structures and Algorithms Review Web App
+            </p>
+            <p>
+              Deployed a progressive web app via Google Firebase. The app is
+              used to help myself have a place where I can keep my notes on data
+              structures and algorithms. It was also a way for me to learn about
+              React and create a project using it.
+            </p>
+            <br />
+            <p>
+              Technologies used: React, CSS, React Bootstrap, Google Firebase
+            </p>
+          </div>
+          <!--End of #review_text-->
+        </div>
+        <!--End of #reviewProject-->
+
+        <div class="projectSections" id="vegetableProject">
+          <div class="image">
+            <img
+              class="projectImg"
+              src="images/veggie.jpg"
+              alt="Vegetable PWA"
+            />
+          </div>
+          <div id="vegetable_text">
+            <p class="projectHeader">Vegetable Weight Progressive Web App</p>
+            <p>
+              Deployed a progessive web app via Google Firebase. The app was
+              created to help the produce department in weighting their products
+              according to a target cost. The app allows users to view a
+              produce's price/lbs and weights for the target costs. The app is
+              hosted in Google Firebase and uses its database components to
+              store data and images.
+              <br /><br />
+
+              There is a manager view that allows the manager to change prices
+              and target costs as well as add new products to the database.
+              <br /><br />
+            </p>
+            <p>
+              Technologies used: HTML, CSS, Javascript, jQuery, Bootstrap,Google
+              Firebase
+            </p>
+          </div>
+          <!--End of #vegetable_text-->
+        </div>
+        <!--End of #vegetableProject-->
+
+        <div class="projectSections" id="websiteProject">
+          <div class="image">
+            <img
+              class="projectImg"
+              src="images/website.jpg"
+              alt="Personal Website"
+            />
+          </div>
+          <div id="website_text">
+            <p class="projectHeader">Personal Website</p>
+            <p>
+              Built a personal website to showcase my skills, projects and
+              interests.
+            </p>
+            <br />
+            <p>Technologies used: HTML, CSS, JavaScript, Bootstrap</p>
+          </div>
+          <!--End of #website_text-->
+        </div>
+        <!--End of #websiteProject-->
+
+        <div class="projectSections" id="capstoneProject">
+          <div class="image">
+            <img
+              class="projectImg"
+              src="images/capstone.png"
+              alt="Odin Oya Logo"
+            />
+          </div>
+          <div id="capstone_text">
+            <p class="projectHeader">Senior Capstone Project</p>
+            <p>
+              Worked with Odin Oya for a semester-long project to clean up and
+              add features to their Django web application. The web portal has
+              multiple applications for small businesses to facilitate
+              day-to-day operations. My tasks focused mostly on the frontend of
+              the web application. <br /><br />
+              Implemented: <br />
+              <li class="list">An animation transition for mobile screens</li>
+              <li class="list">A click/drag feature for the schedule maker</li>
+              <li class="list">
+                An auto archive feature to the messaging system
+              </li>
+              <li class="list">
+                A cleaner time-off request submission feature
+              </li>
+            </p>
+            <p>
+              Technologies used: HTML, CSS, JavaScript, Bootstrap,
+              Python(Django), jQuery
+            </p>
+          </div>
+          <!--End of #capstone_text-->
+        </div>
+        <!--End of #capstoneProject-->
+
+        <div class="projectSections" id="sapphireProject">
+          <div class="image">
+            <img
+              class="projectImg"
+              src="images/sapphire-small.jpg"
+              alt="Sapphire Twitter Clone"
+            />
+          </div>
+          <div id="sapphire_text">
+            <p class="projectHeader">Ruby Twitter Clone</p>
+            <p>
+              A semester of multiple medium-sized projects and a large final
+              project. The final project was a Twitter clone created with Ruby,
+              HTML, JavaScript and SCSS.
+            </p>
+            <p>Technologies used: Ruby, HTML, SCSS, Javascript</p>
+          </div>
+          <!--End of #sapphire_text-->
+        </div>
+        <!--End of #sapphireProject-->
+      </section>
+      <!--End of Projects Section-->
+      <hr />
+
+      <section id="interestsSection" class="container sections">
+        <h2 id="interests" class="sectionHeader">Interests</h2>
+        <p class="projectHeader">Photography</p>
+        <div id="gallery">
+          <div
+            id="photoGallery"
+            class="carousel slide carousel-fade"
+            data-pause="false"
+            data-ride="carousel"
+            data-interval="5000"
+          >
+            <div class="carousel-inner" id="galleryItems" role="listbox">
+              <!--Images container-->
+              <div class="item active">
+                <a href="images/blue_flowers.JPG"
+                  ><img src="images/blue_flowers_small.JPG" alt="Blue Flower"
+                /></a>
+              </div>
+
+              <div class="item">
+                <a href="images/city.JPG"
+                  ><img src="images/city_small.JPG" alt="Tokyo"
+                /></a>
+              </div>
+
+              <div class="item">
+                <a href="images/deer.JPG"
+                  ><img src="images/deer_small.JPG" alt="Nara Deer"
+                /></a>
+              </div>
+
+              <div class="item">
+                <a href="images/gion.JPG"
+                  ><img src="images/gion_small.JPG" alt="Gion City"
+                /></a>
+              </div>
+
+              <div class="item">
+                <a href="images/gion_river.JPG"
+                  ><img src="images/gion_river_small.JPG" alt="Gion River"
+                /></a>
+              </div>
+
+              <div class="item">
+                <a href="images/kinkakuji.JPG"
+                  ><img src="images/kinkakuji_small.JPG" alt="Kinkakuji"
+                /></a>
+              </div>
+
+              <div class="item">
+                <a href="images/kitsune.JPG"
+                  ><img src="images/kitsune_small.JPG" alt="Fox Statue Kyoto"
+                /></a>
+              </div>
+
+              <div class="item">
+                <a href="images/kyoto.JPG"
+                  ><img src="images/kyoto_small.JPG" alt="Kyoto"
+                /></a>
+              </div>
+
+              <div class="item">
+                <a href="images/kyoto2.JPG"
+                  ><img src="images/kyoto2_small.JPG" alt="Kyoto"
+                /></a>
+              </div>
+
+              <div class="item">
+                <a href="images/kyoto3.JPG"
+                  ><img src="images/kyoto3_small.JPG" alt="Kyoto"
+                /></a>
+              </div>
+
+              <div class="item">
+                <a href="images/kyoto_lantern.JPG"
+                  ><img
+                    src="images/kyoto_lantern_small.JPG"
+                    alt="Kyoto Lantern"
+                /></a>
+              </div>
+
+              <div class="item">
+                <a href="images/starbucks.JPG"
+                  ><img src="images/starbucks_small.JPG" alt="Kyoto Starbucks"
+                /></a>
+              </div>
+
+              <div class="item">
+                <a href="images/temple.JPG"
+                  ><img src="images/temple_small.JPG" alt="Kyoto Temple"
+                /></a>
+              </div>
+
+              <div class="item">
+                <a href="images/temple2.JPG"
+                  ><img src="images/temple2_small.JPG" alt="Kyoto Temple"
+                /></a>
+              </div>
+
+              <div class="item">
+                <a href="images/temple_trees.JPG"
+                  ><img
+                    src="images/temple_trees_small.JPG"
+                    alt="Temple behind trees"
+                /></a>
+              </div>
+
+              <div class="item">
+                <a href="images/tower_river.JPG"
+                  ><img
+                    src="images/tower_river_small.JPG"
+                    alt="View from Tokyo Sky Tree"
+                /></a>
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a
+              class="left carousel-control"
+              href="#photoGallery"
+              data-slide="prev"
+            >
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="right carousel-control"
+              href="#photoGallery"
+              data-slide="next"
+            >
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <!--End of #photoGallery-->
+        </div>
+        <!--End of #gallery-->
+      </section>
+      <!--End of Interests Section-->
+    </div>
+    <!--End of #main-->
+
+    <footer style="clear: both">
+      <p id="copyright">© Copyright 2021 Sana Matsumoto</p>
+    </footer>
+  </body>
+</html>
