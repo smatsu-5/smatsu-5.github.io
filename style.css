@@ -688,24 +688,7 @@ hr {
       font-size: 32px;
   }
 
-  #header-text h1{
-      font: 50px/1.1em 'opensans-bold', sans-serif;
-      font-weight: 800;
-      margin: 0 auto 18px auto;
-  }
 
-
-  #header-text p{
-      font: 20px/1.1em 'opensans-bold', sans-serif;
-
-  }
-
-  #header-text {
-      position:absolute;
-      top: 0; bottom: 15px; left: 0; right: 0;
-      margin: auto;
-      height: 250px; /*requires explicit height*/
-  }
 
   #icon, #personal {
       width: 40px;
