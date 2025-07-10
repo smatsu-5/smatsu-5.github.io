@@ -78,6 +78,8 @@ background-color: #f8f7f3;
    z-index: 99999;
 }
 
+
+
 .projectDesc {
   width: 500px;
 }
@@ -154,6 +156,7 @@ background-color: #f8f7f3;
 
 html, body {
   margin: 0;
+  padding: 0;
   height: 100%;
   background-color:#ffffff;
   scroll-behavior: smooth;
@@ -517,6 +520,14 @@ vertical-align: middle;
     padding-bottom: 100px;
 }
 
+.container-fluid {
+  display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
 .wholeSection {
   width: 100%;
 }
