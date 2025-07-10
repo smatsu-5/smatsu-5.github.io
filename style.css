@@ -71,6 +71,7 @@ span{
 #navbar {
   display: flex;
 flex-direction: row;
+justify-content: space-around;
 align-items: center;
 gap: 594px;
 background-color: #f8f7f3;
@@ -93,8 +94,7 @@ background-color: #f8f7f3;
     flex-direction: row;
     align-items: flex-start;
     gap:60px;
-  right: 30px;
-  position: absolute;
+
   color:white;
   }
 
@@ -365,11 +365,6 @@ width: 50%;
 #languagesGroup {
 
   width:25%;
-}
-
-#logo {
-  display: flex;
-  padding-left: 2%;
 }
 
 #logomobile {
