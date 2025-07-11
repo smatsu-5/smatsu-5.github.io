@@ -74,15 +74,16 @@ span{
 
 #navbar {
   display: flex;
+  width: 100%;
 flex-direction: row;
-justify-content: space-around;
+justify-content: space-between;
 align-items: center;
-gap: 594px;
 background-color: #f8f7f3;
 padding: 10px 30px 0px;
 position: fixed;
 z-index: 999999;
 }
+
 
 .btnContainer {
   display: flex;
@@ -105,7 +106,7 @@ z-index: 999999;
   }
 
   #logoImg {
-    width: 50%;
+    width: 7vw;
   }
 
   #myLinks {
@@ -179,18 +180,24 @@ font-family: "Cinzel", serif;
   justify-items: center;
 }
 
+
+.container-fluid-home {
+  display: flex;
+    align-content: flex-start;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
 header {
   position: relative;
   width:100%;
   overflow: hidden;
   background: #f8f7f3;
-    display: block;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-
-  
 }
 
 footer {
@@ -220,7 +227,7 @@ p, .list{
 /*Classes*/
 
 .fa {
-  color: #EF455B;
+  color: #a2a392;
 }
 
 .fa-bars {
@@ -245,7 +252,7 @@ p, .list{
 .interestHeader {
   font-size: 2vw;
   text-align: center;
-  color: #EF455B;
+  color: #a26769;
 }
 
 
@@ -270,15 +277,6 @@ h2 {
   font-style: bold;
   font-size: 2.8vw;
   color: #001858;
-}
-
-.topnavlink {
-  position: relative;
-  display: inline-block;
-  padding: 8px 30px;
-  font-size: 16px;
-  color: white;
-
 }
 
 
@@ -307,7 +305,7 @@ h2 {
   padding-top: 1%;
   text-align: center;
   font-size: 1vw;
-  color: #232994;
+  color: #2e3532;
 }
 
 /*My links*/
@@ -479,16 +477,6 @@ vertical-align: middle;
 }
 
 
-#topnav {
-  text-align: center;
-  width: 100%;
-  position:fixed;
-  top:0;
-  left:0;
-  right:0;
-  margin:auto;
-}
-
 #thumbnails {
   width: 15%; 
   float:right;
@@ -511,7 +499,7 @@ vertical-align: middle;
     align-content: flex-start;
     flex-direction: row;
     align-items: start;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -522,7 +510,7 @@ vertical-align: middle;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
+  
 }
 .wholeSection {
   width: 100%;
@@ -563,7 +551,6 @@ vertical-align: middle;
 #arrowContainer{
   display: flex;
   justify-content: flex-end;
-  padding: 10px 10px;
 }
 
 
@@ -612,6 +599,24 @@ vertical-align: middle;
   color: black;
 }
 
+.btn-primary {
+  border: 2px black solid;
+}
+.btn-primary:active, 
+.btn-primary:hover, 
+.btn-primary.focus, 
+.btn-primary.active {
+    background-color: #d4cdc3 !important;
+    color: white !important;
+    border: 2px black solid !important;
+}
+
+.btn:hover {
+    color: lightgrey;
+}
+--bs-btn-hover-color{
+  color: #d4cdc3;
+}
 .modal-header .btn-close {
   font-size: 16px;
 }
@@ -666,7 +671,7 @@ height: fit-content;
 }
 .projectBlock {
     display: flex;
-  align-items: stretch; /* Make columns equal in height */
+/* Make columns equal in height */
   gap: 2rem;
     flex-direction: row;
     justify-content: space-around;
