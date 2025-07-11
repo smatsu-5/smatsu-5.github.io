@@ -29,6 +29,10 @@
 .words{
     overflow: hidden;
 }
+
+.words span{
+  color: #a26769;
+}
 #iamText {
   font-size: 40px;
   font-family: "Cardo", serif;
@@ -76,6 +80,8 @@ align-items: center;
 gap: 594px;
 background-color: #f8f7f3;
 padding: 10px 30px 0px;
+position: fixed;
+z-index: 999999;
 }
 
 .btnContainer {
@@ -165,7 +171,7 @@ html, body {
 .hero-text {
   text-align: center;
 font-family: "Cinzel", serif;  
-  color: black;
+  color: #2E3532;
   align-content: center;
   border-radius: 25px;
   width: 600px;
@@ -189,7 +195,7 @@ header {
 
 footer {
   position:relative;
-  background-color: #90B4CE;
+  background-color: #d4cdc3;
   height: 40px;
   color: black;
   width:100%;
@@ -454,7 +460,7 @@ width: 50%;
 
 #techGroup p,#languagesGroup p{
   font-size: 24px;
-  color:#EF455B;
+  color:#a26769;
   text-align: center;
 }
 
@@ -543,6 +549,7 @@ vertical-align: middle;
   writing-mode: sideways-lr;
   text-orientation: mixed;
   font-family: "Cinzel", serif;  
+  color: #a26769;
 }
 
 .blob-wrapper {
@@ -600,7 +607,9 @@ vertical-align: middle;
 
 
 .btn {
-  background-color:#EF455B;
+  background-color:#a26769;
+    font-family: "Cinzel", serif;  
+  color: black;
 }
 
 .modal-header .btn-close {
@@ -612,7 +621,10 @@ vertical-align: middle;
   font-size: 14px;
 }
 
-
+.projectHeader {
+  color: #2e3532;
+  font-family: 'Montserrat', sans-serif;
+}
 .projectImage {
    width: 100%;
   height: auto;
@@ -629,6 +641,7 @@ vertical-align: middle;
 -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 flex: 1;
+height: fit-content;
 }
 
 .overlay {
@@ -659,6 +672,7 @@ flex: 1;
     justify-content: space-around;
     padding-top: 50px;
     padding-bottom: 50px;
+    align-items: flex-start;
 }
 
 .projectTitle {
@@ -708,7 +722,6 @@ flex: 1;
   }
 
 
-
   .sections {
       font-size: 60px;
       line-height: 30px;
@@ -728,6 +741,9 @@ flex: 1;
     font-size: 20px;
   }
 
+  #interestsSectionText {
+    height: 30%;
+  }
 
   #about, #skills, #projects, #interests {
     scroll-margin-top: 80px;
@@ -878,38 +894,4 @@ flex: 1;
   .intro {
     text-align: center;
   }
-
-  #hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/books.jpg");
-
-  /* Set a specific height */
-  height: 100%;
-
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-/* Place text in the middle of the image */
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-}
-
-
-
-
-
-
-
-
-
-
+} 
