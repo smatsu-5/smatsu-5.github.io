@@ -21,6 +21,7 @@
       crossorigin="anonymous"
     ></script>
 
+
     <!--Favicons-->
     <link
       rel="apple-touch-icon"
@@ -208,7 +209,7 @@
           <h1 id="skills" class="textHeader">Skills</h1>
         </div>
         <div id="skillsSectionText" class="sections">
-          <div class="container">
+          <div class="container-fluid">
             <div id="languagesGroup">
               <p>Languages</p>
               <ul class="iconGroup">
@@ -271,115 +272,146 @@
         </div>
         <div id="projectsSectionText" class="sections">
           
-          <div class="projectBlock container">
-            <div class="projectImage">
+          <div class="projectBlock">
+            <div class="projectImageDiv">
               <img src="images/veggieprices.png" class="projectImage" />
             </div>
             <div class="projectDesc">
               <h2 class="projectHeader">Vegetable Price PWA</h2>
               <p>
-               A custom web application built with ReactJS to streamline and 
-               accurately calculate pricing for produce items at my current workplace.
-
-               The app leverages Google Firebase for hosting and utilizes its Realtime 
-               Database to manage and update product data efficiently in real time.
+               Built a custom React web app to streamline produce pricing 
+               at my workplace, using Firebase for real-time data management and hosting.
               </p>
 
-              <p>
-                Technologies used: HTML, CSS, Javascript, ReactJS,Google Firebase
+             <p class="langList">
+                HTML // CSS // ReactJS // Google Firebase
               </p>
+              <!-- Button trigger modal -->
+               <div class="btnContainer">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                More info
+              </button>
+               </div> 
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Vegetable Price PWA</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Developed a custom web application using ReactJS to improve pricing accuracy and efficiency 
+                        for produce items at my current workplace. The app leverages Google Firebase for both hosting 
+                        and real-time database functionality, allowing users to view and update product pricing data 
+                        instantly. This solution has streamlined workflow and reduced manual errors in daily pricing tasks.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
 
-          <div class="projectBlock container">
-            <div class="projectImage">
+          <div class="projectBlock">
+            <div class="projectImageDiv">
               <img src="images/veggieweights.png" class="projectImage" />
             </div>
             <div class="projectDesc">
               <h2>Vegetable Weight PWA</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi,
-                libero mollitia temporibus totam dolor similique nostrum
-                dignissimos voluptatum deleniti commodi veritatis laudantium
-                dicta rerum aut amet iusto fuga beatae distinctio.
+                Built and deployed a progressive web app with Google Firebase to help the 
+                produce department calculate product weights based on target pricing, 
+                including a manager view for inventory and pricing control.
               </p>
 
-              <p>
-                Technologies used: HTML, CSS, Javascript, jQuery,
-                Bootstrap,Google Firebase
+              <p class="langList">
+                HTML // CSS // ReactJS // Google Firebase
               </p>
+              <!-- Button trigger modal -->
+               <div class="btnContainer">
+                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                   More info
+                  </button>
+                </div>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Vegetable Weights PWA</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Developed and deployed a progressive web app using Google Firebase to streamline price-based weight 
+                        calculations in the produce department. The app allows users to view a product’s price per pound 
+                        and recommended weights for meeting specific target costs. 
+                        <br><br>
+                        It also features a manager portal 
+                        where administrators can adjust pricing, modify target costs, and add new products to the 
+                        real-time database. The app utilizes Firebase’s hosting and database services to store dynamic 
+                        data and images, making it accessible and scalable for in-store use.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="projectBlock container">
-            <div class="projectImage">
+          <div class="projectBlock">
+            <div class="projectImageDiv">
               <img src="images/websitev2.png" class="projectImage" />
             </div>
             <div class="projectDesc">
               <h2>Personal Website Ver 2.</h2>
               <p>
-                A redesign to my personal website after more experience and learning.
-
-
-                I recently redesigned my personal website to better reflect my skills, 
-                growth, and current projects. With a cleaner layout, updated visuals, 
-                and improved usability, this site is now a more accurate representation 
-                of who I am as a developer and creative. T
+                Redesigned my personal website to better showcase my 
+                skills, growth, and current projects with an improved layout and user experience.
               </p>
 
-              <p>
-                Technologies used: HTML, CSS, Javascript, jQuery,
-                Bootstrap,Google Firebase
+              <p class="langList">
+                HTML // CSS 
               </p>
+                            <!-- Button trigger modal -->
+              <div class="btnContainer">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                More info
+              </button>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Personal Webstite Ver 2</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        After gaining more experience and refining my skills, I redesigned my personal website to better reflect 
+                        my development journey and current capabilities. The new version features a cleaner layout, updated 
+                        visuals, and enhanced usability, offering a more accurate and professional representation of who I am as 
+                        both a developer and creative thinker.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          
-          <div class="projectBlock container">
-            <div class="projectImage">
-              <img src="images/website.png" class="projectImage" />
-            </div>
-            <div class="projectDesc">
-              <h2>Personal Website Version 1</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi,
-                libero mollitia temporibus totam dolor similique nostrum
-                dignissimos voluptatum deleniti commodi veritatis laudantium
-                dicta rerum aut amet iusto fuga beatae distinctio.
-              </p>
+          <div id="arrowContainer">
 
-              <p>Technologies used:</p>
-              <p><a href="ver1.html" class="link-text">Old Version</a></p>
+            <div id="arrowImgContainer">
+              
+              <a href="more_projects.html">
+                <img src="images/arrow.png" id="arrowImg"/>
+              </a>
             </div>
-          </div>
-
-          <div class="projectBlock container">
-            <div class="projectImage">
-              <img src="images/capstone.png" class="projectImage" />
-            </div>
-            <div class="projectDesc">
-              <h2>Senior Capstone Project</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi,
-                libero mollitia temporibus totam dolor similique nostrum
-                dignissimos voluptatum deleniti commodi veritatis laudantium
-                dicta rerum aut amet iusto fuga beatae distinctio.
-              </p>
-
-              <p>
-                Technologies used: HTML, CSS, Javascript, jQuery,
-                Bootstrap,Google Firebase
-              </p>
-            </div>
-          </div>
-          <div class="blob">
-            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-              <path
-                fill="#ffffff"
-                d="M45,-22C57.5,-4.4,66.1,19.4,58,37.8C49.8,56.3,24.9,69.5,1.1,68.9C-22.8,68.3,-45.6,53.9,-56.1,34C-66.7,14.1,-65.1,-11.3,-53.7,-28.3C-42.3,-45.2,-21.2,-53.8,-2.4,-52.4C16.3,-51,32.6,-39.6,45,-22Z"
-                transform="translate(100 100)"
-              />
-            </svg>
           </div>
         </div>
 
@@ -557,7 +589,7 @@
     <!--End of #main-->
 
     <footer style="clear: both">
-      <p id="copyright">© Copyright 2021 Sana Matsumoto</p>
+      <p id="copyright">© Copyright 2025 Sana Matsumoto</p>
     </footer>
   </body>
 </html>

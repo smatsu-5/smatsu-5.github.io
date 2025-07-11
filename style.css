@@ -75,18 +75,18 @@ justify-content: space-around;
 align-items: center;
 gap: 594px;
 background-color: #f8f7f3;
-   z-index: 99999;
+padding: 10px 30px 0px;
 }
 
-
-
-.projectDesc {
-  width: 500px;
-}
-.image {
-  width: 45%;
+.btnContainer {
   display: flex;
-  align-items: center;
+  justify-content: flex-end;
+}
+
+
+
+.projectDesc .langList {
+  text-align: left;
 }
 
 #navLinks {
@@ -242,10 +242,6 @@ p, .list{
   color: #EF455B;
 }
 
-.blob {
-  width: 300px;
-  height: 300px; 
-}
 
 h2 {
   padding-bottom: 10px;
@@ -526,6 +522,7 @@ vertical-align: middle;
   width: 100%;
 }
 
+
 #projectCards {
   display: flex;
     align-content: flex-start;
@@ -540,15 +537,6 @@ vertical-align: middle;
   padding-top: 50px;
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 5px solid black;
-    margin: 1em 0;
-    padding: 0;
-}
-
 .textHeader{
   margin: 0px;
   font-size: 34px;
@@ -557,13 +545,90 @@ hr {
   font-family: "Cinzel", serif;  
 }
 
+.blob-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* or a fixed height like 300px */
+  width: 100%;  /* or fixed width */
+  position: relative;
+}
+#arrowContainer{
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 10px;
+}
+
+
+
+/* Arrow Bounce */
+#arrowImg {
+  width: 200px;
+  height: auto;
+  animation: bounceArrow 2s infinite;
+  transition: transform 0.3s ease;
+}
+
+#arrowImg:hover {
+  transform: scale(1.1);
+}
+
+
+
+.blob {
+  width: 300px;
+  height: 300px;
+}
+
+.blob svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.blob-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  pointer-events: none;
+}
+
+
+.btn {
+  background-color:#EF455B;
+}
+
+.modal-header .btn-close {
+  font-size: 16px;
+}
+
+.modal-body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
 
 
 .projectImage {
+   width: 100%;
+  height: auto;
   display: block;
-  width: 500px;
-  height: 300px;
-  object-fit: cover;
+  object-fit: contain;
+  
+}
+
+
+
+.projectImageDiv {
+  border: 1px solid black;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+flex: 1;
 }
 
 .overlay {
@@ -579,8 +644,21 @@ hr {
   background-color: #008CBA;
 }
 
+.projectDesc {
+  width: 400px;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* push top text and bottom button apart */
+}
 .projectBlock {
-  margin-bottom: 100px;
+    display: flex;
+  align-items: stretch; /* Make columns equal in height */
+  gap: 2rem;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .projectTitle {
@@ -629,21 +707,14 @@ hr {
       font-size:20px;
   }
 
-  .projectImg{
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 20px;
-      width: auto;
-      height: auto;
-  }
+
 
   .sections {
       font-size: 60px;
       line-height: 30px;
       font-family: 'Montserrat', sans-serif;
       padding-bottom: 5%;
-      width: 90%;
+      width: 100%;
   }
 
   .sectionHeader {
