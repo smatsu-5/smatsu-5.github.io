@@ -171,13 +171,14 @@ html, body {
 
 .hero-text {
   text-align: center;
-font-family: "Cinzel", serif;  
+  font-family: "Cinzel", serif;  
   color: #2E3532;
-  align-content: center;
-  border-radius: 25px;
-  width: 600px;
-  height: 500px;
   justify-items: center;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
 }
 
 
@@ -186,7 +187,8 @@ font-family: "Cinzel", serif;
     align-content: flex-start;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    padding-top: 100px;
 }
 
 header {
@@ -198,6 +200,35 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+}
+
+.section-additional {
+  font-size: 60px;
+
+  line-height: 30px;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  width: 90%;
+  background: #f8f7f3;
+  border-radius: 25px;
+ 
+}
+
+.container-additional {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    padding-top: 50px;
+     padding-bottom: 30px;
+}
+
+.header {
+  font-size: 2vw;
+  padding-top:20px;
+  text-align: center;
+  color: #a26769;
 }
 
 footer {
@@ -470,12 +501,6 @@ width: 50%;
 vertical-align: middle;
 }
 
-.projectSections {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 10%;
-}
-
 
 #thumbnails {
   width: 15%; 
@@ -493,6 +518,7 @@ vertical-align: middle;
   width: 50%;
   float: right;
 }
+
 
 .container {
   display: flex;
@@ -538,6 +564,7 @@ vertical-align: middle;
   text-orientation: mixed;
   font-family: "Cinzel", serif;  
   color: #a26769;
+  padding-right: 20px;
 }
 
 .blob-wrapper {
@@ -649,18 +676,7 @@ flex: 1;
 height: fit-content;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
+
 
 .projectDesc {
   width: 400px;

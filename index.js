@@ -1,4 +1,4 @@
-
+var currentScroll = $(window).scrollTop();
 
 var homePos = document.getElementById("home").offsetTop;
 var aboutPos = document.getElementById("aboutSection").offsetTop;

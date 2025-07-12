@@ -1,0 +1,176 @@
+
+#navbar {
+  display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f7f3;
+    padding: 10px 30px 0px;
+    }
+
+#navLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap:60px;
+
+  color:white;
+  }
+
+    #navLinks a{
+    font-family: "Cinzel", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 46px;
+    color: #2e3532;    /* identical to box height */
+    
+    
+  }
+
+
+    #logoImg {
+    width: 7vw;
+  }
+.container {
+  display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    padding-top: 50px;
+     padding-bottom: 30px;
+
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color:#ffffff;
+  scroll-behavior: smooth;
+}
+.sections {
+  font-size: 60px;
+  padding: 3% 3% 3%;
+  line-height: 30px;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  width: 90%;
+  background: #f8f7f3;
+  border-radius: 25px;
+}
+
+.galleryBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    align-items: flex-start;
+}
+
+.header {
+  font-size: 2vw;
+  padding-top:20px;
+  text-align: center;
+  color: #a26769;
+
+}
+
+footer {
+  position:relative;
+  background-color: #d4cdc3;
+  height: 40px;
+  color: black;
+  width:100%;
+}
+
+#copyright {
+  width: 100%;
+  padding-top: 1%;
+  text-align: center;
+  font-size: 1vw;
+  color: #2e3532;
+}
+
+
+
+.projectDesc {
+  width: 400px;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* push top text and bottom button apart */
+}
+.projectBlock {
+    display: flex;
+/* Make columns equal in height */
+  gap: 2rem;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: flex-start;
+}
+
+
+.projectImageDiv {
+  border: 1px solid black;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+flex: 1;
+height: fit-content;
+}
+
+.projectImage {
+   width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  
+}
+
+.projectDesc .langList {
+  text-align: left;
+}
+
+p, .list{
+  text-align: left; 
+  font-size: 18px;
+  font-family: 'Questrial', sans-serif;
+}
+
+.btn {
+  background-color:#a26769;
+    font-family: "Cinzel", serif;  
+  color: black;
+}
+
+.btn-primary {
+  border: 2px black solid;
+}
+.btn-primary:active, 
+.btn-primary:hover, 
+.btn-primary.focus, 
+.btn-primary.active {
+    background-color: #d4cdc3 !important;
+    color: white !important;
+    border: 2px black solid !important;
+}
+
+.btn:hover {
+    color: lightgrey;
+}
+--bs-btn-hover-color{
+  color: #d4cdc3;
+}
+.modal-header .btn-close {
+  font-size: 16px;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
