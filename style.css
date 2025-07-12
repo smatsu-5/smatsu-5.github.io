@@ -1,29 +1,9 @@
-.custom-shape-divider-bottom-1752129376 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-bottom-1752129376 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 191px;
-}
-
-.custom-shape-divider-bottom-1752129376 .shape-fill {
-    fill: #FFFFFF;
-}
+/*Contains the "I am" text and words */
 .wrapper{
     box-sizing: content-box;
     height: 70px;
     padding: 50px 30px;
     display: flex;
-
-
 }
 
 .words{
@@ -131,17 +111,6 @@ z-index: 999999;
     animation-fill-mode: both;
   }
 
-  #introText{
-    font-size: 26px;
-    font-family: 'Questrial', sans-serif;
-  }
-
-  #nameText {
-    font-size: 60px;
-    font-family: 'Questrial', sans-serif;
-    letter-spacing: 5px;
-    
-    }
 
   #links {
     box-sizing: border-box;
@@ -225,7 +194,7 @@ header {
 }
 
 .header {
-  font-size: 2vw;
+  font-size: 24px;
   padding-top:20px;
   text-align: center;
   color: #a26769;
@@ -303,12 +272,6 @@ h2 {
   border-radius: 25px;
 }
 
-.sectionHeader {
-  font-family: 'Questrial', sans-serif;
-  font-style: bold;
-  font-size: 2.8vw;
-  color: #001858;
-}
 
 
   #aboutSection, #skillsSection, #projectsSection, #interestsSection {
@@ -523,8 +486,8 @@ vertical-align: middle;
     flex-direction: row;
     align-items: start;
     justify-content: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .languageTags ul {
@@ -823,7 +786,7 @@ height: fit-content;
       align-items: center;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 20%;
+      margin-bottom: 5%;
   }
 
  
@@ -831,10 +794,10 @@ height: fit-content;
       visibility: visible;
       position: fixed;
       top: 0px;
-      background-color: black;
+      background-color: #f8f7f3;
       width:100%;
       z-index: 100;
-      font-size:20px;
+      font-size:25px;
       height:40px;
   }
 
@@ -853,7 +816,8 @@ height: fit-content;
   }
 
   #mobilenavLinks a{
-      color: white;
+      color: black;
+      font-family: "Cinzel", serif;
   }
 
  
@@ -933,4 +897,25 @@ height: fit-content;
   .intro {
     text-align: center;
   }
+
+
+  .wrapper{
+    box-sizing: content-box;
+    height: 70px;
+    display: flex;
+}
+
+.container-fluid-home {
+  flex-direction: column-reverse;
+}
+
+.container {
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.textHeader {
+  text-orientation: upright;
+  writing-mode: horizontal-tb;
+}
 } 

@@ -146,7 +146,7 @@ html, body {
 }
 
 .header {
-  font-size: 2vw;
+  font-size: 24px;
   padding-top:40px;
   text-align: center;
   color: #a26769;
@@ -185,4 +185,16 @@ footer {
             grid-row: span 1;
         }
     
+}
+
+@media only screen and (max-width: 800px) {
+
+    .gallery {
+        grid-gap: 10px;
+        margin: 5px;
+    }
+
+    .container {
+        max-width: 700px;
+    }
 }
