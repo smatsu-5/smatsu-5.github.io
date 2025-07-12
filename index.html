@@ -183,9 +183,9 @@
 
     <div id="main">
 
-      <div id="aboutSection" class="container">
+      <div id="about" class="container">
         <div id="aboutSectionHeader" class="sectionHeaderDiv">
-          <h1 id="about" class="textHeader">About Me</h1>
+          <h1 class="textHeader">About Me</h1>
         </div>
         <div id="aboutSectionText" class="sections">
           <p>
@@ -209,9 +209,9 @@
       <!--End of About Section-->
 
       <hr />
-      <div id="skillsSection" class="container">
+      <div id="skills" class="container">
         <div id="skillsSectionHeader" class="sectionHeaderDiv">
-          <h1 id="skills" class="textHeader">Skills</h1>
+          <h1 class="textHeader">Skills</h1>
         </div>
         <div id="skillsSectionText" class="sections">
           <div class="container-fluid">
@@ -271,9 +271,9 @@
 
       <hr />
 
-      <div id="projectsSection" class="container">
+      <div id="projects" class="container">
         <div class="sectionHeaderDiv">
-          <h2 id="projects" class="textHeader">Projects</h2>
+          <h2 class="textHeader">Projects</h2>
         </div>
         <div id="projectsSectionText" class="sections">
           
@@ -282,10 +282,11 @@
               <img src="images/veggieprices.png" class="projectImage" />
             </div>
             <div class="projectDesc">
-              <h2 class="projectHeader">Vegetable Price PWA</h2>
+              <h2 class="projectHeader">Vegetable Price Web App</h2>
               <p>
-               Built a custom React web app to streamline produce pricing 
-               at my workplace, using Firebase for real-time data management and hosting.
+               Developed a React web app to simplify the process of determining prices
+               for the produce department. This web app uses Firebase for hosting and real-time
+               data management.
               </p>
 
                <div class="languageTags">
@@ -298,24 +299,30 @@
             </div>
               <!-- Button trigger modal -->
                <div class="btnContainer">
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#priceModal">
                 More info
               </button>
                </div> 
               <!-- Modal -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal fade" id="priceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Vegetable Price PWA</h1>
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Vegetable Price Web App</h1>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       <p>
-                        Developed a custom web application using ReactJS to improve pricing accuracy and efficiency 
-                        for produce items at my current workplace. The app leverages Google Firebase for both hosting 
-                        and real-time database functionality, allowing users to view and update product pricing data 
-                        instantly. This solution has streamlined workflow and reduced manual errors in daily pricing tasks.
+                        Previously spreadsheets were used to determine pricing for our products. The spreadsheet was a bit messy
+                        so this web app simplifies with a simple UI. No need for multiple rows of unnecessary data for the user.
+
+                        <br><br>
+
+                        The app leverages Google Firebase for both hosting and real-time database functionality, allowing 
+                        users to view and update product pricing data instantly. 
+                        
+                        <br><br>This solution has simplified the process and 
+                        made has reduced errors by the user compared to if they used a spreadsheet.
                       </p>
                     </div>
                   </div>
@@ -330,9 +337,9 @@
               <img src="images/veggieweights.png" class="projectImage" />
             </div>
             <div class="projectDesc">
-              <h2 class="projectHeader">Vegetable Weight PWA</h2>
+              <h2 class="projectHeader">Vegetable Weight Web App</h2>
               <p>
-                Built and deployed a progressive web app with Google Firebase to help the 
+                Built and deployed a web app with Google Firebase to help the 
                 produce department calculate product weights based on target pricing, 
                 including a manager view for inventory and pricing control.
               </p>
@@ -361,14 +368,13 @@
                     </div>
                     <div class="modal-body">
                       <p>
-                        Developed and deployed a progressive web app using Google Firebase to streamline price-based weight 
-                        calculations in the produce department. The app allows users to view a product’s price per pound 
-                        and recommended weights for meeting specific target costs. 
+                        Developed a web app hosted by Google Firebase to efficiently make price-based weight calculations
+                        for the produce department. The user enters the current price per pound of the product 
+                        and the app determines the recommended weights to meet the specified target costs.
                         <br><br>
-                        It also features a manager portal 
-                        where administrators can adjust pricing, modify target costs, and add new products to the 
-                        real-time database. The app utilizes Firebase’s hosting and database services to store dynamic 
-                        data and images, making it accessible and scalable for in-store use.
+                        A manager feature is included where managers can adjust pricing and target costs. They are also a 
+                        simple UI that allows managers to create and remove products from the lineup. The app uses Firebase 
+                        for hosting and database services to store data and images.
                       </p>
                     </div>
                   </div>
@@ -384,8 +390,9 @@
             <div class="projectDesc">
               <h2 class="projectHeader">Personal Website Ver 2.</h2>
               <p>
-                Redesigned my personal website to better showcase my 
-                skills, growth, and current projects with an improved layout and user experience.
+                A redesign of my personal website that better represents my skills as a web developer. 
+                The new version features a cleaner layout, additional pages and updated visuals. It showcases 
+                my skills, projects and interests.
               </p>
 
               <div class="languageTags">
@@ -396,12 +403,12 @@
             </div>
                             <!-- Button trigger modal -->
               <div class="btnContainer">
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#websiteModal">
                 More info
               </button>
               </div>
               <!-- Modal -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal fade" id="websiteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                   <div class="modal-content">
                     
@@ -411,10 +418,13 @@
                     </div>
                     <div class="modal-body">
                       <p>
-                        After gaining more experience and refining my skills, I redesigned my personal website to better reflect 
-                        my development journey and current capabilities. The new version features a cleaner layout, updated 
-                        visuals, and enhanced usability, offering a more accurate and professional representation of who I am as 
-                        both a developer and creative thinker.
+
+                        After gaining more experience through building various web apps and learning more about web development,
+                        I redesigned my personal website. 
+                        
+                        <br><br>This site better reflects my skills and ideas of a web developer. This 
+                        
+                        new version has an updated color scheme, better visuals and new pages which shows more about who I am. 
                       </p>
                     </div>
                   </div>
@@ -437,9 +447,9 @@
       </div>
       <hr />
 
-      <div id="interestsSection" class="container">
+      <div id="interests" class="container">
         <div id="interestsSectionHeader" class="sectionHeaderDiv">
-          <h2 id="interests" class="textHeader">Interests</h2>
+          <h2 class="textHeader">Interests</h2>
         </div>
         
    

@@ -311,13 +311,10 @@ h2 {
 }
 
 
+  #aboutSection, #skillsSection, #projectsSection, #interestsSection {
+    scroll-margin-top: 40px;
+  }
 
-#about {
-  scroll-margin-top: 100px;
-  position: relative;
-  width: 100%;
-  
-}
 
 #capstone_text {
   float: right;
@@ -559,7 +556,7 @@ vertical-align: middle;
   display: flex;
     align-content: flex-start;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
   
 }
@@ -783,17 +780,12 @@ height: fit-content;
       font-style: bold;
       font-size: 30px;
   }
-
-  #about {
-    font-size: 20px;
-  }
-
   #interestsSectionText {
     height: 30%;
   }
 
   #about, #skills, #projects, #interests {
-    scroll-margin-top: 80px;
+    scroll-margin-top: 65px;
   }
   
   #photoGallery {
