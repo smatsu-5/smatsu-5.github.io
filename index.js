@@ -111,3 +111,10 @@ $('#photoGallery').on('slid.bs.carousel', function () {
         $('#thumbnails').attr("data-interval", 5000);
     }
   })
+
+
+  document.getElementById('target-element').scrollIntoView({
+    behavior: 'smooth',  // For smooth scrolling (optional)
+    block: 'center',    // Vertically center the element
+    inline: 'center'    // Horizontally center the element (if applicable)
+});

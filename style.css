@@ -530,6 +530,31 @@ vertical-align: middle;
     padding-bottom: 100px;
 }
 
+.languageTags ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap; /* Add this to enable wrapping */
+  padding: 0;
+  justify-content: start;
+  gap: 20px;
+}
+
+.languageTags li {
+  background-color: #d4cdc3;
+  border-radius: 50px;
+  padding: 6px 12px;
+  white-space: nowrap; /* Prevents text from breaking inside the tag */
+}
+
+.languageTags {
+  margin: 0;
+}
+
+.tagText {
+  font-size: 14px;
+  width: auto; 
+}
+
 .container-fluid {
   display: flex;
     align-content: flex-start;
@@ -559,7 +584,7 @@ vertical-align: middle;
 
 .textHeader{
   margin: 0px;
-  font-size: 34px;
+  font-size:26px;
   writing-mode: sideways-lr;
   text-orientation: mixed;
   font-family: "Cinzel", serif;  
@@ -624,6 +649,7 @@ vertical-align: middle;
   background-color:#a26769;
     font-family: "Cinzel", serif;  
   color: black;
+    font-weight: 600;
 }
 
 .btn-primary {

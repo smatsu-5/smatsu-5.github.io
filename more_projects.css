@@ -145,6 +145,7 @@ p, .list{
   background-color:#a26769;
     font-family: "Cinzel", serif;  
   color: black;
+  font-weight: 600;
 }
 
 .btn-primary {
@@ -174,3 +175,27 @@ p, .list{
   justify-content: flex-end;
 }
 
+.languageTags ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap; /* Add this to enable wrapping */
+  padding: 0;
+  justify-content: start;
+  gap: 20px;
+}
+
+.languageTags li {
+  background-color: #d4cdc3;
+  border-radius: 50px;
+  padding: 6px 12px;
+  white-space: nowrap; /* Prevents text from breaking inside the tag */
+}
+
+.languageTags {
+  margin: 0;
+}
+
+.tagText {
+  font-size: 14px;
+  width: auto; 
+}
