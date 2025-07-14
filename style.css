@@ -29,27 +29,34 @@ span{
     10%{
         transform: translateY(-112%);
     }
-    25%{
+    20%{
         transform: translateY(-100%);
     }
-    35%{
+    30%{
         transform: translateY(-212%);
     }
-    50%{
+    40%{
         transform: translateY(-200%);
     }
-    60%{
+    50%{
         transform: translateY(-312%);
     }
-    75%{
+    60%{
         transform: translateY(-300%);
     }
-    85%{
+    70%{
         transform: translateY(-412%);
     }
-    100%{
+    80%{
         transform: translateY(-400%);
     }
+    90%{
+        transform: translateY(-512%);
+    }
+    100%{
+        transform: translateY(-500%);
+    }
+
 }
 
 #navbar {
