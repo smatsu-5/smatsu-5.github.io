@@ -23,7 +23,7 @@ span{
     padding-left: 10px;
     color: #0e6ffc;
     font-size: 40px;
-    animation: spin_words 8s infinite;
+    animation: spin_words 14s infinite;
 }
 @keyframes spin_words{
     10%{
