@@ -199,3 +199,42 @@ p, .list{
   font-size: 14px;
   width: auto; 
 }
+
+
+@media only screen and (max-width: 800px) {
+      #mobilenav {
+      visibility: visible;
+      position: fixed;
+      top: 0px;
+      background-color: #f8f7f3;
+      width:100%;
+      z-index: 100;
+      font-size:4vw;
+      height:40px;
+  }
+
+    #mobilenavLinks{
+      height:70%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      align-items: center;
+      margin: auto;
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+  #mobilenavLinks a{
+      color: black;
+      font-family: "Cinzel", serif;
+  }
+
+  
+  #navbar {
+    display: none;
+  }
+
+}
+

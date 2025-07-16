@@ -365,11 +365,6 @@ width: 50%;
   width:25%;
 }
 
-#logomobile {
-  color: white;
-  font-size: 30px;
-}
-
 #main {
   top: 0%;
   width:auto;
@@ -804,7 +799,7 @@ height: fit-content;
       background-color: #f8f7f3;
       width:100%;
       z-index: 100;
-      font-size:25px;
+      font-size:4vw;
       height:40px;
   }
 
@@ -847,9 +842,13 @@ height: fit-content;
 
 
   #techGroup p,#languagesGroup p{
-      font-size: 25px;
+      font-size: 20px;
   }
 
+  .icons i{
+    font-size: 14px;
+    line-height: 20px;
+  }
   #thumbnails {
       display: none;
   }
@@ -924,5 +923,20 @@ height: fit-content;
 .textHeader {
   text-orientation: upright;
   writing-mode: horizontal-tb;
+}
+
+
+#arrowImg {
+  width: 150px;
+
+}
+
+#iamText {
+  font-size: 8vw;
+  text-wrap-mode: nowrap;
+}
+
+.words span {
+  font-size: 8vw;
 }
 } 
